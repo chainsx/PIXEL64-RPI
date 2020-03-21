@@ -1,0 +1,3394 @@
+Package: bluetooth
+Architecture: all
+Version: 5.50-1+rpt1
+Priority: optional
+Section: admin
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 69
+Depends: bluez
+Suggests: bluez-cups, bluez-obexd
+Filename: ./bluetooth_5.50-1+rpt1_all.deb
+Size: 43036
+MD5sum: b38a5aa0ca303ae44eb14a5bdb4e36ee
+SHA1: 97d01f73cfa5226d159d8e03ca356f700e4da16f
+SHA256: 88c88e010e866dd0e3e24eacc17c91cfc9588d0043a76b202ef2712917638cca
+SHA512: 7840f5831572c6c169f44a4096305074a2647011f89cc55ee721f59adead8ea030755b0ca7b464c0f971ccb2d5b535e738e8093a0c920d36aa8da9639785fb12
+Homepage: http://www.bluez.org
+Description: Bluetooth support (metapackage)
+ This package provides all of the different plugins supported
+ by the Bluez bluetooth stack.
+
+Package: bluez-cups-dbgsym
+Architecture: arm64
+Version: 5.50-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 202
+Depends: bluez-cups (= 5.50-1+rpt1)
+Filename: ./bluez-cups-dbgsym_5.50-1+rpt1_arm64.deb
+Size: 173864
+MD5sum: 635c2042590b77c089ca54f227a4aebf
+SHA1: 5cf595e32c9eb90097aa7403ec8abd55238be691
+SHA256: 29f88065cac56ac60e90636c9b2f3973c5f9d5dda29468204d3855368232c23f
+SHA512: 2ba1c2f580dce0028c1bc65184e463b38f7183258e39f5879a3052c8190068baf775b7716524fca723791155781de489c7e1b0e6a3eda070f0d5b4483b6a94ca
+Description: debug symbols for bluez-cups
+Build-Ids: 3c70b39f03db1646a98b8619d6853540400c6abe
+
+Package: bluez-cups
+Architecture: arm64
+Version: 5.50-1+rpt1
+Priority: optional
+Section: admin
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 236
+Depends: libc6 (>= 2.17), libdbus-1-3 (>= 1.9.14), libglib2.0-0 (>= 2.16.0), cups
+Filename: ./bluez-cups_5.50-1+rpt1_arm64.deb
+Size: 96864
+MD5sum: b7a9e27568888ee2c7479153be3435c8
+SHA1: 0a89fcf68b67314db9b591d3eb3de01a73911185
+SHA256: 7a4de0aaa044ac5b4c306dbb6560ae5234c23c245d92ebd832fddd72a01699a5
+SHA512: ca0d1e4857e7021283390195b22cc65da37d0f4fb0633cba8a887d909e7bd1b23eef66ac4883809e94ab725c4d9055e0bf87970050e2ec5b9278a5b6806dd850
+Homepage: http://www.bluez.org
+Description: Bluetooth printer driver for CUPS
+ This package contains a driver to let CUPS print to Bluetooth-connected
+ printers.
+ .
+ BlueZ is the official Linux Bluetooth protocol stack. It is an Open Source
+ project distributed under GNU General Public License (GPL).
+
+Package: bluez-dbgsym
+Architecture: arm64
+Version: 5.50-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 5194
+Depends: bluez (= 5.50-1+rpt1)
+Filename: ./bluez-dbgsym_5.50-1+rpt1_arm64.deb
+Size: 4594904
+MD5sum: aa4ffd81660382bd9ff274292613d7f3
+SHA1: 288959f84632338cf27b6297fbda2d7aa52fa47c
+SHA256: b6bacf8d8a58e4e233ba6d3ea025227775c5cbaec6731a8367a3ea63a3bbad4e
+SHA512: 84cb4dd4734460bd7e130e2db55e5216e054596937799464831855cff71a5d7d497f31afcc40d2ee3108c492ce3195673c139432516b21d40d0ed779df783044
+Description: debug symbols for bluez
+Build-Ids: 0b83e2dd4880941a3b5c0c2ccca22dcbd65d3f3a 19cec99c4b59bade143a589d0bd50c30948ce66a 1c42ac047ed1c224cadfa194889ac3132618c352 2d8524dd9582c67a6648e2d004158bc32ca4e3d3 32978fb01c3b0f3a3394d57bdf4d554fe01694d2 3da16a0d8a0752044c8a4340ddafcb5c02d95d36 47944ae851182fbe10873d7d98c864b15a2434ab 701f7e482430f70f4f418733aa3feb8dd2a2db48 7573bc8994d94d5ac67e6dfaf806b5defab43e37 7d0ebb1b0ce858a8004cdc17c0c19d94aec07088 931f28adc7383367207834067504275741598d82 adf02a182c9cdffc04542ab654e659389247901e b5d1789069cbca3b552c948cf0045980fca00fae be0d37fc7ec9a6e54cbce65dc72d941ab3e923b9 be5f7cde044d55a2529dd8d983f6e67d17e801f3 c2839c2e28cb10e7ed314a63ba6ce01754855dac c56a7f9f52627b1dfeedeee0136202925e185b81 cc177529f3f70b90063dbd40b8bb639798dbc5e9 cdd92667a1a20dd8fd1da63838e9f7390210879e da93338d68ce1a5267d451310286f9b725340d2d fd4a38a054fb8b65dc50eb27878393d40ab962cc
+
+Package: bluez-firmware
+Architecture: arm64
+Version: 1.2-4+rpt2
+Priority: optional
+Section: non-free/kernel
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 235
+Filename: ./bluez-firmware_1.2-4+rpt2_arm64.deb
+Size: 122472
+MD5sum: 44930e6fa18aaecaa24fc1e10e81956c
+SHA1: 8b658df3e320a09c57f837bb086edd1fca784794
+SHA256: 2c8494055e435abc29cbaef448c102370912562b3b593b750ecb4131eab02d90
+SHA512: 9ebbb2f74c1212e96859b54bf6984c3e60d0ad3edaff5e7d9c437afa5b54ac9a62e4aa2038bb7b36702884487f3b581b2ac0be9cf9df9911ad76b16537330e9f
+Description: Firmware for Bluetooth devices
+ This firmware is required for operation of Bluetooth dongles based on
+ the Broadcom BCM203x chipset.
+
+Package: bluez-hcidump-dbgsym
+Architecture: arm64
+Version: 5.50-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 578
+Depends: bluez-hcidump (= 5.50-1+rpt1)
+Filename: ./bluez-hcidump-dbgsym_5.50-1+rpt1_arm64.deb
+Size: 558948
+MD5sum: 7d928263682310c15175f453baf87892
+SHA1: 55268b9626cf78a44f0bfa4995cf66096a50d419
+SHA256: 3ab4d1b2dc9270bd3f37dfe8bad560432e955120d83bf927dfc54ff1b43540f7
+SHA512: 2c61165dfc6d40d7308a027d38983927f460e5e7fc3be41a8e866ff6eedd15d747ee07f37f6e5736548745b2d99ea645002b36a0a3a661255fbf7e4d8e3ba476
+Description: debug symbols for bluez-hcidump
+Build-Ids: f70dfa8d17dff99ff23bca691f154db4c1ba4860
+
+Package: bluez-hcidump
+Architecture: arm64
+Version: 5.50-1+rpt1
+Priority: optional
+Section: admin
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 460
+Depends: libc6 (>= 2.17)
+Filename: ./bluez-hcidump_5.50-1+rpt1_arm64.deb
+Size: 161300
+MD5sum: cfa2e90b20a6f556952b4a528a28e9e2
+SHA1: a403e2c1cf287a5631ad4287c103b3d77ed790fd
+SHA256: 0c40d6bcc949095874891fa4b56beab1286255b393f765c3b0167ce513f8c2c3
+SHA512: 2091d78b574563416b8fae747a24f4edb06896487f96c10b3dfd540b6851190f5aabd095c8ff42b9662ef24b383bdf5a8da62f25b2824deedd006df59f4ac42d
+Homepage: http://www.bluez.org
+Description: Analyses Bluetooth HCI packets
+ The hcidump utility allows the monitoring of Bluetooth activity.
+ It provides a disassembly of the Bluetooth traffic and can display
+ packets from higher level protocols such as RFCOMM, SDP and BNEP.
+ .
+ This was the software that is independent as bluez-hcidump, but this has been
+ integrated into BlueZ from BlueZ 5.0.
+ .
+ BlueZ is the official Linux Bluetooth protocol stack. It is an Open Source
+ project distributed under GNU General Public License (GPL).
+
+Package: bluez-obexd-dbgsym
+Architecture: arm64
+Version: 5.50-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 700
+Depends: bluez-obexd (= 5.50-1+rpt1)
+Filename: ./bluez-obexd-dbgsym_5.50-1+rpt1_arm64.deb
+Size: 617012
+MD5sum: 95fcffad504daeaa00023f3aaaad0a44
+SHA1: 7037f68b53fa702380845bb254028b8ffcecf397
+SHA256: d60bdada0b0bb59e05f6227444141c3fc946027aaea4892fec8e33de3e652d37
+SHA512: e7d980dfd6b10c150f739a6ca1a39945e9e58d0c60ad1c2be99c3f5a26538bc695a173919d3cb5c766844faa6f56a923614c42d491fec9c4017c6e0f51e3bc25
+Description: debug symbols for bluez-obexd
+Build-Ids: 16084c0ad56ea6e3be466551b0e5e39987c2aa3a
+
+Package: bluez-obexd
+Architecture: arm64
+Version: 5.50-1+rpt1
+Priority: optional
+Section: admin
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 583
+Depends: libc6 (>= 2.28), libdbus-1-3 (>= 1.9.14), libglib2.0-0 (>= 2.35.9), libical3 (>= 3.0.0)
+Conflicts: obexd-client, obexd-server
+Replaces: obexd-client, obexd-server
+Filename: ./bluez-obexd_5.50-1+rpt1_arm64.deb
+Size: 198776
+MD5sum: 6a5f66219b629c46e7d349f240bfff17
+SHA1: 8501063fc65da1fd292dc6480c69b0c650bde9bf
+SHA256: d40887f13aab69f9ada6c7ed85ae826af6ea21ac74afe8be20ff72861356e494
+SHA512: 6108384718627c23f0edc56429b9349e9c49ff97bcadba99fe645d886a69c45a34e1d990d345354df8e76f30f729d1a6015f41f499a1158ee68432a5dca694c3
+Homepage: http://www.bluez.org
+Description: bluez obex daemon
+ This package contains a OBEX(OBject EXchange) daemon.
+ .
+ OBEX is communication protocol to facilitate the exchange of the binary
+ object between the devices.
+ .
+ This was the software that is independent as obexd, but this has been
+ integrated into BlueZ from BlueZ 5.0.
+ .
+ BlueZ is the official Linux Bluetooth protocol stack. It is an Open Source
+ project distributed under GNU General Public License (GPL).
+
+Package: bluez-test-scripts
+Architecture: all
+Version: 5.50-1+rpt1
+Priority: optional
+Section: admin
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 152
+Filename: ./bluez-test-scripts_5.50-1+rpt1_all.deb
+Size: 80284
+MD5sum: de16fa4dcb8c958c757e4f829469a32c
+SHA1: 4106a64a62925409af08da95582fa253c355e567
+SHA256: cdc8a03f58481d057d9a1ed96cc0b013a5e9fed4a7e6866f16dd0eccd993c02e
+SHA512: fb6dfe32b0f628158b58dd956ea543681d31b3dc9ac42de9bf7efc02fcc78411a54bc672fc14cc24733f28de96b41d85fd0c6f77e60c57c9b6d7f9425e733750
+Homepage: http://www.bluez.org
+Description: test scripts of bluez
+ This package contains test scripts for using BlueZ.
+ .
+ BlueZ is the official Linux Bluetooth protocol stack. It is an Open Source
+ project distributed under GNU General Public License (GPL).
+
+Package: bluez-test-tools-dbgsym
+Architecture: arm64
+Version: 5.50-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 2477
+Depends: bluez-test-tools (= 5.50-1+rpt1)
+Filename: ./bluez-test-tools-dbgsym_5.50-1+rpt1_arm64.deb
+Size: 2130392
+MD5sum: f06aa6487a88046dc82f1c2f743660ea
+SHA1: 6c8ab2d5c5d87838362dbbfa082a7dd808b3885c
+SHA256: 93cc7cf53875701fc6e405a56047e40e5f2ace1214d89e7e4f9ce3d400788f3c
+SHA512: e2f559612f33f4a4367575660e44666d42e5abe2311654176d32bb33c1202fb6f2232c1ebc9404f7844de1bacfa04bfcab0393d93269124c26240ee489638dbd
+Description: debug symbols for bluez-test-tools
+Build-Ids: 1612a03c4b16f689a8d3f8f1502bb7be855aab3b 2c7eb148975384bafbe756b2ebc7813012e16d07 432dee1a85fccae775d58c0b609f9a9f8d4457e9 5c26b0973e1267c42718c0bcdb338c47d259731c 7d5b41987272b7c5b5c52fc9e1ef08565f617153 a4103d85be1dbd87d0d30f39a144113115e50038 b04dcb11adda8dccba6928533aca31cc0945fd42 bad661a1ffb2e90a7459e46da2a244233a74f68a bb4109afea76e03e6736bfc706ff8ba5192715b3 cb307ca88a9d953ddd1906c6e615a6f2eecb935c f2eade64d6d1c2f18c26ec741ce47b6363476fb0 fc56d8e065f48e71a645e23ca5854698aa381128
+
+Package: bluez-test-tools
+Architecture: arm64
+Version: 5.50-1+rpt1
+Priority: optional
+Section: admin
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 2145
+Depends: libc6 (>= 2.17), libdbus-1-3 (>= 1.9.14), libglib2.0-0 (>= 2.28.0), bluez (= 5.50-1+rpt1)
+Filename: ./bluez-test-tools_5.50-1+rpt1_arm64.deb
+Size: 277876
+MD5sum: acaee9177f7ace31c5dd2c18630d2709
+SHA1: 678329b27a8729f04ad079201e62075a85a716a0
+SHA256: ede1c41fcb21107f3e5fcd9a0ff53d448ad80bbe41bd34a52510927cf9703a86
+SHA512: a4eb8e0b6e0198a24d3087ce1c1480b235c42c9fe5a65146721378319ccd2523d0c55ee7fe3830c6a3ee889d7b259ec4484dda638742aef04ebf67ef4042b69e
+Homepage: http://www.bluez.org
+Description: test tools of bluez
+ This package contains test tools for using BlueZ.
+ .
+ BlueZ is the official Linux Bluetooth protocol stack. It is an Open Source
+ project distributed under GNU General Public License (GPL).
+
+Package: bluez
+Architecture: arm64
+Version: 5.50-1+rpt1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 4791
+Depends: libasound2 (>= 1.0.17), libc6 (>= 2.17), libdbus-1-3 (>= 1.9.14), libdw1 (>= 0.127), libglib2.0-0 (>= 2.31.8), libreadline7 (>= 6.0), libudev1 (>= 196), kmod, udev, lsb-base, dbus
+Suggests: pulseaudio-module-bluetooth
+Conflicts: bluez-audio (<= 3.36-3), bluez-utils (<= 3.36-3)
+Breaks: udev (<< 170-1)
+Replaces: bluez-audio (<= 3.36-3), bluez-input, bluez-network, bluez-serial, bluez-utils (<= 3.36-3), udev (<< 170-1)
+Filename: ./bluez_5.50-1+rpt1_arm64.deb
+Size: 956836
+MD5sum: 587dcead23640660e35cb86f1378373a
+SHA1: dec921ac5430437774a4a336e6d0c238104547b1
+SHA256: 236c4ce323dbd241595a2cc071b8ce0ac524b770ea8edb48f869dcc75519a6f8
+SHA512: bd2d7116f4e930e8cfcad445108e8ce74566a6b9298665e4df688de199b6ca3a46437ed080692774d6da8f4b34a3059b924b35993b0bee0b920c5abc83f25ec1
+Homepage: http://www.bluez.org
+Description: Bluetooth tools and daemons
+ This package contains tools and system daemons for using Bluetooth devices.
+ .
+ BlueZ is the official Linux Bluetooth protocol stack. It is an Open Source
+ project distributed under GNU General Public License (GPL).
+
+Package: fonts-piboto
+Architecture: all
+Version: 1.2
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Installed-Size: 2229
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: ./fonts-piboto_1.2_all.deb
+Size: 535516
+MD5sum: 99f2a4f203918006bdc71d76b1b31e54
+SHA1: 9d5fe1a01f107ab19c787ab17f8886f1cb973e64
+SHA256: 0249624daf7c6cca2d5cf642e93670ea70f9db0ee976f096303af21f43b25a83
+SHA512: e2ad0d322d4d1b193618bf135446336011985c1a619fbed27b662a47ad2642aac0e839f7b2005f59bca787154159d662d4db69744a4f698e44c1d3d523183f66
+Homepage: https://android.googlesource.com/platform/frameworks/base/
+Description: sans-serif font family released with Android Ice Cream Sandwich
+ This package contains fonts released with Android Ice Cream Sandwich OS.
+ Google describes the font as "modern yet approachable and emotional". This
+ family includes regular and oblique styles of Thin, Light, Regular, Medium,
+ Bold, Black, and Condensed widths.
+
+Package: gir1.2-gtk-2.0
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Multi-Arch: same
+Priority: optional
+Section: introspection
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 871
+Provides: gir1.2-gdk-2.0 (= 2.24.32-3+rpt1), gir1.2-gdkx11-2.0 (= 2.24.32-3+rpt1)
+Depends: libgtk2.0-common, gir1.2-atk-1.0 (>= 1.32.0), gir1.2-freedesktop (>= 0.9.3), gir1.2-gdkpixbuf-2.0 (>= 2.22.1), gir1.2-glib-2.0 (>= 0.9.3), gir1.2-pango-1.0 (>= 1.28.3), libgtk2.0-0 (>= 2.24.0)
+Filename: ./gir1.2-gtk-2.0_2.24.32-3+rpt1_arm64.deb
+Size: 213468
+MD5sum: b48f7eb6551c4e966e00999af983cf80
+SHA1: 0c39367390cf8e47a66a82c115d7d35abac74697
+SHA256: 0166ccf1a14c7a96cd6c8ac960d8e35ab9aaf6ce157000d29fe15b3c0244baa6
+SHA512: 5864754debc7cfeb8da723cc5924ee7bfcbc9fdcfcc80f058d8109d134c689e15b5048a2de331f68e49c5d1551f6c1c2dd80788bc57851c9693b51210da4f574
+Homepage: http://www.gtk.org/
+Description: GTK+ graphical user interface library -- gir bindings
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.
+
+Package: gnome-panel-control-dbgsym
+Architecture: arm64
+Version: 3.6.1-8+rpt3
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 25
+Depends: gnome-panel-control (= 3.6.1-8+rpt3)
+Filename: ./gnome-panel-control-dbgsym_3.6.1-8+rpt3_arm64.deb
+Size: 10008
+MD5sum: 120f527841d0fd91f69dba537e9744ff
+SHA1: 6da786bc7974fe768bb62d7975aacd10ca4539eb
+SHA256: 70f43b79655f7fd3a29b45b515955e114596df7f8d9454c5047d4d176f7bb200
+SHA512: 9643aedac2d3ddccd46da31ebecc9507d0577ee08416f57354feafb92c68da726ef3e48ffc38749bf5a1b4763027ae73bcc13a89107137fc7dee615b43dac6e1
+Description: debug symbols for gnome-panel-control
+Build-Ids: bbd2b97b27b755bf6bcd9721564bf334a9c77238
+
+Package: gnome-panel-control
+Architecture: arm64
+Version: 3.6.1-8+rpt3
+Priority: optional
+Section: x11
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 65
+Depends: libc6 (>= 2.17), libx11-6
+Breaks: openbox (<< 3.4.11.2)
+Replaces: openbox (<< 3.4.11.2)
+Filename: ./gnome-panel-control_3.6.1-8+rpt3_arm64.deb
+Size: 46124
+MD5sum: cdea997f6c61313a593f4de6438824e5
+SHA1: 6af7c30597426710d4085a009579c605155da927
+SHA256: ec4927b3f360a6d8493173455edfd67dd9e436b00e6785e64b88da3a2b0a4986
+SHA512: 155e900d05df3679a11315817ba310838397218cd9ed1ba3e05fbba2f39424d5cf7ec0e9bcda26576e86ee8816b545090195b4844dac561c6b30533d2a2dbfe7
+Homepage: http://www.openbox.org
+Description: command line utility to invoke GNOME panel run dialog/menu
+ gnome-panel-control can be used to invoke the GNOME panel run or main
+ menu from the command line. This is originally a helper utility of openbox
+ since gnome-panel is no longer managing its own key bindings.
+
+Package: gtk2-engines-clearlookspix-dbgsym
+Architecture: arm64
+Version: 1:2.20.7
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gtk2-engines-clearlookspix
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 236
+Depends: gtk2-engines-clearlookspix (= 1:2.20.7)
+Filename: ./gtk2-engines-clearlookspix-dbgsym_2.20.7_arm64.deb
+Size: 210468
+MD5sum: 32134d5b03445891c1f1273feba6c5e1
+SHA1: 938416bfc10f262c3abfdffc2d7326db384112f9
+SHA256: 91c4d997236b85479f30a079ad5855f9f8f1c54ba5c47fca25863f5e60298560
+SHA512: a7390e33fcd8ff38ad67f1a31a004be7301cface53f691d38ffd5ce04344266034d3290d21f0bae1205e763cf56026cf12c080856cd7a588f14d1bee5649f2f7
+Description: debug symbols for gtk2-engines-clearlookspix
+Build-Ids: 74bed9722c0903b59ce6a34c31d4af1648ec5d32
+
+Package: gtk2-engines-clearlookspix
+Architecture: arm64
+Version: 1:2.20.7
+Multi-Arch: same
+Priority: optional
+Section: gnome
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 178
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.19.7-2), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0)
+Breaks: gnome-themes-extras (<< 2)
+Filename: ./gtk2-engines-clearlookspix_2.20.7_arm64.deb
+Size: 69228
+MD5sum: 25f776b3dd3bcfc3608800469ba342ff
+SHA1: e4b1e631f724e72501e537d21a8f60952d6ddccc
+SHA256: f8ca2eedec33224151ff99261ac31020526ad356184179c06c246a1f7b4cea94
+SHA512: d18ff2ca8e0e645b15ce6c281a97a0b7f3f739c80f6125df423b692417da98171f28f4dee7101fe9054fbe915db5960e26f25c5b2ce7ae6f02c0cc1675054054
+Description: clearlookspix theme for GTK+ 2.x
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the clearlookspix theme engine.
+
+Package: gtk2-engines-pixbuf-dbgsym
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 98
+Depends: gtk2-engines-pixbuf (= 2.24.32-3+rpt1)
+Breaks: libgtk2.0-0-dbg (<< 2.24.31-3~)
+Replaces: libgtk2.0-0-dbg (<< 2.24.31-3~)
+Filename: ./gtk2-engines-pixbuf-dbgsym_2.24.32-3+rpt1_arm64.deb
+Size: 80620
+MD5sum: 97d58d7c3a9b4151f3652e9faa58093e
+SHA1: 80545fa3c27c1fbfb3b93cfdf5687de3a3d4dcf6
+SHA256: 85742abe6fc15ce953db51a68ce5b107bb4b51d9f7e3242ff009c81213651b40
+SHA512: 098e30ad14706e7c74345c5cfedf0290b73c8c09f789efb9a3411c995634533d0f28bca882dcff73dcef96e13e174df548e545ce8212f7659fab6ac5702da1d4
+Description: debug symbols for gtk2-engines-pixbuf
+Build-Ids: d356fb5beb2e41368f86587faa74060320fef965
+
+Package: gtk2-engines-pixbuf
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Multi-Arch: same
+Priority: optional
+Section: graphics
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 111
+Depends: libatk1.0-0 (>= 1.32.0), libc6 (>= 2.17), libcairo2 (>= 1.6.4-6.1), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.1), libglib2.0-0 (>= 2.27.3), libpango-1.0-0 (>= 1.28.3), libpangocairo-1.0-0 (>= 1.28.3), libpangoft2-1.0-0 (>= 1.28.3), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxfixes3
+Filename: ./gtk2-engines-pixbuf_2.24.32-3+rpt1_arm64.deb
+Size: 59780
+MD5sum: 87dd016983ef9cfb15a27e4a32945ab3
+SHA1: bc2eb454d28588b9989b270eb6fbd38d60ebce95
+SHA256: 8e725c61dca1ed04147e67ab18265bc63e65d0d6e35d1fb5ee6e8352627f7124
+SHA512: 2b4eddbdf612d996f7374cfadbab4479505afb7f22e108211714d12ee58bd1e6fd8fa88119d1557bc2ee9246afe75aca54d444199afbce8844f1a6a2f9f48aac
+Homepage: http://www.gtk.org/
+Description: pixbuf-based theme for GTK+ 2.x
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the pixbuf theme engine.
+
+Package: gtk2.0-examples-dbgsym
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 418
+Depends: gtk2.0-examples (= 2.24.32-3+rpt1)
+Breaks: libgtk2.0-0-dbg (<< 2.24.31-3~)
+Replaces: libgtk2.0-0-dbg (<< 2.24.31-3~)
+Filename: ./gtk2.0-examples-dbgsym_2.24.32-3+rpt1_arm64.deb
+Size: 360432
+MD5sum: 18e6dd5e6fbdcee9abc523bbb0c276da
+SHA1: 7f065f374d9d72c9b28ec9eab19a0ea80bb29699
+SHA256: 3644fe045cb2b35fc81cd6149c8ccac21a68a0e1d4189718381d619b6ef0b9a1
+SHA512: fb225acdc878d35bcd4fe3039778eb392762171a2df20a0b1c10c0407995c1e9cc4ce1b7629f83f44370cacca2c23a6225ccffcffee2962708ebd0d93f6b4545
+Description: debug symbols for gtk2.0-examples
+Build-Ids: e4ede1a2a00d57a08966ce71b4d90f7a4054863c
+
+Package: gtk2.0-examples
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Priority: optional
+Section: x11
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 928
+Depends: libatk1.0-0 (>= 1.32.0), libc6 (>= 2.17), libcairo2 (>= 1.6.4-6.1), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.1), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (= 2.24.32-3+rpt1), libpango-1.0-0 (>= 1.28.3), libpangocairo-1.0-0 (>= 1.28.3), libpangoft2-1.0-0 (>= 1.28.3), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxfixes3
+Filename: ./gtk2.0-examples_2.24.32-3+rpt1_arm64.deb
+Size: 288612
+MD5sum: 29b7405cefedb1819dc4ea952104c200
+SHA1: 30a2b96ebbc072154b1089092f2788b044352f8a
+SHA256: c33a67a00320517824321b336a8be13cfb702484f74c9c078e8b580ba9fcae55
+SHA512: aae36e0163bf4435b3369057a351bf61e5b834cda2e1a4b850c361a803a92e3ac1c093b365fc95073eb390837fb11ff7de326d1bac1a713b0bb6fe3439cffc60
+Homepage: http://www.gtk.org/
+Description: example files for GTK+ 2.0
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the example files and a demonstration program
+ for GTK+-2.0.
+
+Package: libbluetooth-dev
+Architecture: arm64
+Version: 5.50-1+rpt1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 631
+Provides: libbluetooth3-dev
+Depends: libbluetooth3 (= 5.50-1+rpt1), libc6-dev | libc-dev
+Suggests: pkg-config
+Conflicts: bluez-pan, libbluetooth-dev, libsdp2-dev (<= 1.5.2)
+Replaces: libsdp2-dev (<= 1.5.2)
+Filename: ./libbluetooth-dev_5.50-1+rpt1_arm64.deb
+Size: 197276
+MD5sum: b0b126eb207a1aeb497b20513cf08a1f
+SHA1: 9410b4d3d62db7fdc6c0d071eff2a5e69e29d6f8
+SHA256: 680ae21cf81e9a03614a9aeda297b8dc8bc248aefb1789582d3ca38559ee85db
+SHA512: aa79c93759b803a3c7628a49a95f1b57cf4645fbda654bd235f580f91bdd3be3c6718f9fc1d6062fe9f4c93861c085e79bbb5e1d09b6563b3cbbea8896f5bb4a
+Homepage: http://www.bluez.org
+Description: Development files for using the BlueZ Linux Bluetooth library
+ BlueZ is the official Linux Bluetooth protocol stack. It is an Open Source
+ project distributed under GNU General Public License (GPL).
+ .
+ This package contains the development libraries and header files you need to
+ develop your programs using the libbluetooth library.
+
+Package: libbluetooth3-dbgsym
+Architecture: arm64
+Version: 5.50-1+rpt1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 171
+Depends: libbluetooth3 (= 5.50-1+rpt1)
+Filename: ./libbluetooth3-dbgsym_5.50-1+rpt1_arm64.deb
+Size: 141040
+MD5sum: b4f27c38770a3d75bac78e96b5f63c14
+SHA1: 37609d3af7c178d3523a4995995803babcfea2f7
+SHA256: cef3a18d78fda8352119606505723f7e4a629ffaf278c6c7431baecfc694ba7a
+SHA512: 03bab6c63d54cca60d5bf88216e651fd36f4a3aaa7e33265d3fa1a094024fbbf89fe0ecddddf3a80cfca3824dd6f09831d858a594d15ce7983df2db7527257eb
+Description: debug symbols for libbluetooth3
+Build-Ids: 53e3563859b06169f591d96cd8725430dbc8d263 624fd6a55a09b41b5bedaf2337b06b2e04425a20
+
+Package: libbluetooth3
+Architecture: arm64
+Version: 5.50-1+rpt1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: bluez
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Installed-Size: 251
+Depends: libc6 (>= 2.17), libudev1 (>= 183)
+Conflicts: libsdp2 (<= 1.5-2)
+Replaces: libsdp2 (<= 1.5-2)
+Filename: ./libbluetooth3_5.50-1+rpt1_arm64.deb
+Size: 97264
+MD5sum: 18a5f1a0bdb506ef1bfb96593f7b2c60
+SHA1: de90ed20b0005b728eb4dc2a55899412dd83743d
+SHA256: a6b81ee17e5782932203cbd28a6ba0ebc0032d13a4ca5e089c23533dacaad3c9
+SHA512: ed9dbd0b36184be10e787f641bc9cae9e83ec500a8c090fd17eeea022543b0cc6a0f5c5440e992db3b3949a070cb31279e835b27a0d56fa4fa8df995eb07bd5a
+Homepage: http://www.bluez.org
+Description: Library to use the BlueZ Linux Bluetooth stack
+ BlueZ is the official Linux Bluetooth protocol stack. It is an Open Source
+ project distributed under GNU General Public License (GPL).
+
+Package: libgail-common-dbgsym
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 905
+Depends: libgail-common (= 2.24.32-3+rpt1)
+Breaks: libgail-dbg (<< 2.24.31-3~)
+Replaces: libgail-dbg (<< 2.24.31-3~)
+Filename: ./libgail-common-dbgsym_2.24.32-3+rpt1_arm64.deb
+Size: 781628
+MD5sum: fc703f2acc5683dfe6ca07623809da0d
+SHA1: e96fdd18ce7981c567bfb6ecdd26a41d8ea85f69
+SHA256: abb7f0adbd273aa158fe0b515b58aa0ee68d699584eebb668ba56058353c197a
+SHA512: 194bab22626addf586f9eb0de37864412dd20871cd7a7304761dd4fcacdf5e6217f52b57536de6dc0c3c5e24b3c7659f35ebc9cd00e558b083b2820501365365
+Description: debug symbols for libgail-common
+Build-Ids: 0865763cdad53775df99d2215d126d1482ba9e49 843e60006248a801c36a2cd77f16feea036d1ccf
+
+Package: libgail-common
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 459
+Depends: libatk1.0-0 (>= 1.32.0), libc6 (>= 2.17), libcairo2 (>= 1.6.4-6.1), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgail18 (= 2.24.32-3+rpt1), libgdk-pixbuf2.0-0 (>= 2.22.1), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.32), libpango-1.0-0 (>= 1.28.3), libpangocairo-1.0-0 (>= 1.28.3), libpangoft2-1.0-0 (>= 1.28.3), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxfixes3
+Filename: ./libgail-common_2.24.32-3+rpt1_arm64.deb
+Size: 148856
+MD5sum: 400faff9a581e1b7a8ab421f42b7bdcd
+SHA1: d655357f8710ba3c8747c1e01711a4cbdb256027
+SHA256: e6e18ce64817035983e29915a8c7503f15f637660f2829c020ef959e40e63cca
+SHA512: 5305d23204269d71e413e63f8e306e8e581bf65aae168b1ef07cb3bc24e9144f552efeb84d46cc59a217f11f7f014b82db8930d8ad7826accfb01339da406f72
+Homepage: http://www.gtk.org/
+Description: GNOME Accessibility Implementation Library -- common modules
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains core shared libraries.
+
+Package: libgail-dev
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 117
+Depends: libgail18 (= 2.24.32-3+rpt1), libgail-common (= 2.24.32-3+rpt1), libgtk2.0-dev (= 2.24.32-3+rpt1), pkg-config (>= 0.26-1), libatk1.0-dev (>= 1.13.0)
+Suggests: libgail-doc
+Filename: ./libgail-dev_2.24.32-3+rpt1_arm64.deb
+Size: 55596
+MD5sum: 73c14cedd40e58c1a394ad2dddf88d73
+SHA1: 6f665662bf05daf52ba3a6ad7e8faa236ebd5d61
+SHA256: 04b9ebf2d91a3a9e3c0e08abacb63f86236f6b3f0448b2ced89eaeee8b932fff
+SHA512: 51cbc4ca852193ea64eb86ff91b4d923bc1d7c211e1a628924d912a920dab33d7fe9eb91311f29f71635f9ed7bd8b72452b367d79f68dc61f05937ca2e9994ca
+Homepage: http://www.gtk.org/
+Description: GNOME Accessibility Implementation Library -- development files
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the development files for Gail.
+
+Package: libgail-doc
+Architecture: all
+Version: 2.24.32-3+rpt1
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 135
+Suggests: devhelp
+Filename: ./libgail-doc_2.24.32-3+rpt1_all.deb
+Size: 55792
+MD5sum: ac6da377ce6a7ad0d3e51a10fc455d53
+SHA1: 6b3b128fe535c55945fa018fe30940091f3b67b6
+SHA256: 2508b18bb7d649d8edf502b63b0370c2578847b110e5743f82a73f62e2a9d014
+SHA512: 6f20f7aa827e5d3d2301fddc6df9a403fc20e4f405019ec6fa5faee7d3515e4dea860423690925ca4213cffd0d27e04ad67b21da1f80fa3799c95f4606c00457
+Homepage: http://www.gtk.org/
+Description: documentation files of the Gail library
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the documentation files for Gail.
+
+Package: libgail18-dbgsym
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 56
+Depends: libgail18 (= 2.24.32-3+rpt1)
+Breaks: libgail-dbg (<< 2.24.31-3~)
+Replaces: libgail-dbg (<< 2.24.31-3~)
+Filename: ./libgail18-dbgsym_2.24.32-3+rpt1_arm64.deb
+Size: 38336
+MD5sum: 711a0cbba209ec550d66eeeb8405f181
+SHA1: 09719066f7f18f48ae0de2f118bd5480cbd96f5c
+SHA256: 1344598b1a7ea4f7cf1bdd1452e853558069f63c80fb9bb5b2155cfb9dcf84e6
+SHA512: 12ca5776e36423da67ab5d1d63ba88c03924283006044d6f2a3766d2c6dfa4ca754a00ff9f05ca1724f15c9d1d70d6bebb56fd5b07700b5ea6f213478530d51e
+Description: debug symbols for libgail18
+Build-Ids: b95eb50f41575f86f3fd1356905bccd38ca784a9
+
+Package: libgail18-udeb
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Multi-Arch: same
+Priority: optional
+Section: debian-installer
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 435
+Depends: fontconfig-udeb (>= 2.13), libatk1.0-udeb (>= 2.30.0), libc6-udeb (>= 2.28), libcairo2-udeb (>= 1.14.0), libfreetype6-udeb (>= 2.9), libgdk-pixbuf2.0-0-udeb (>= 2.38.1+dfsg), libglib2.0-udeb (>= 2.58.3), libgtk2.0-0-udeb (= 2.24.32-3+rpt1), libpango1.0-udeb (>= 1.42.4), libx11-6-udeb (>= 2:1.6.0)
+Filename: ./libgail18-udeb_2.24.32-3+rpt1_arm64.udeb
+Size: 109376
+MD5sum: 154dcb431e112f7ac1ccb29a8f2c9c94
+SHA1: 7ba634b1588f4fdcd02371b18a888a390f7dcc44
+SHA256: c462a40d405873056b22345ca939b305ea4d250fe06bc7e0c71261bc51e1d594
+SHA512: 243395030c85dac59c6d61a363bd42c97ec6c19319091253803a1fd4538fa726389d96458b04597a6e93ec9caac919e5e8218a3cfe37a1e83179a09215c63848
+Description: GNOME Accessibility Implementation Library -- shared libraries
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the shared library for the Debian installer.
+
+Package: libgail18
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 96
+Depends: libatk1.0-0 (>= 1.32.0), libc6 (>= 2.17), libcairo2 (>= 1.6.4-6.1), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.1), libglib2.0-0 (>= 2.27.3), libgtk2.0-0 (= 2.24.32-3+rpt1), libpango-1.0-0 (>= 1.28.3), libpangocairo-1.0-0 (>= 1.28.3), libpangoft2-1.0-0 (>= 1.28.3), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxfixes3
+Filename: ./libgail18_2.24.32-3+rpt1_arm64.deb
+Size: 54596
+MD5sum: bb80a436cefab439564d38170cfb044a
+SHA1: acdf0527002e12b78e434c5ce5e5d5d61b80a230
+SHA256: 4cca4f9e7ba26ed03801db2fccb9d103357e8196b1e8cb4fa671050e3d22e7db
+SHA512: 3659e5226cee87203ed072e289ebd7b82ab3b01920b98e50181adcb3b6212a1223161da40d628622cc008e7a7d67fe22be3f0b0192324d20a1f4ed621a0603ac
+Homepage: http://www.gtk.org/
+Description: GNOME Accessibility Implementation Library -- shared libraries
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the shared library.
+
+Package: libgtk2.0-0-dbgsym
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 9492
+Depends: libgtk2.0-0 (= 2.24.32-3+rpt1)
+Breaks: libgtk2.0-0-dbg (<< 2.24.31-3~)
+Replaces: libgtk2.0-0-dbg (<< 2.24.31-3~)
+Filename: ./libgtk2.0-0-dbgsym_2.24.32-3+rpt1_arm64.deb
+Size: 8528032
+MD5sum: c2328c791fd6f77a31334074f877471c
+SHA1: 25ab3ad6fa8ccde82c31ac942200dc21d0616318
+SHA256: 4f11cc0985505b80e02dc58cba197deae2fd35e2a06d4afec22ac779ca36b6a2
+SHA512: 4aa1605717924569b182104543cdb3403dba1bc6a9d1efcb82edc8238d3c85d671831b2b3187bf34208bd78efd90b58107e85c2ce760630158ad0f7d88619d8b
+Description: debug symbols for libgtk2.0-0
+Build-Ids: 03a5d0768aca04b7cbb466f67772d3f9936fc7b3 0e3d4c3bb6a6ac1eb0e778bbd67b6aca7a716060 127c9e0a3bc496f80127410513a49df7e7e18f44 353008213e4854300548fa7007f04f433827099b 3a1c76902ef8dff87d5c1e79771772379a3b4c37 4e23efecd4de76504d62395a149000a351a6859c 6201f48eec448804a95a8148d029c5c92d71b2f3 88180a896e4fae06b71585a31d7465a840e89d7c 8ea399cc5ff87930ad9b9894b8f1c5a1d1490236 96a8fb05ff3044d9be8c3160de561a7aaa375517 9bdcde3da3ee5e3779e6fe6cb15270ffdbdddaf6 a33bc9f77a7c2e981b621cefd25591dbd61d5c24 a6811d05f6dcca46f65b44ff8f4f2b4fdca839bf c460e3dc2c196bd2633ce028d7a04fdddf59a4b5 c99d92c5a3ebde42e3f3a052921b8ea6eed3c23c ed4b4b964859ba64d92cc2de3f551b7f80625db3 f174af724156b2e2bc3c2a5fd1962cca5707a8f3 f9bc7c1dee5700dfc14ade2332aa09617b51a09c
+
+Package: libgtk2.0-0-udeb
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Priority: optional
+Section: debian-installer
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 5211
+Provides: gtk2.0-binver-2.10.0
+Depends: fontconfig-udeb (>= 2.13), libatk1.0-udeb (>= 2.30.0), libc6-udeb (>= 2.28), libcairo2-udeb (>= 1.14.0), libfreetype6-udeb (>= 2.9), libgdk-pixbuf2.0-0-udeb (>= 2.38.1+dfsg), libglib2.0-udeb (>= 2.58.3), libpango1.0-udeb (>= 1.42.4), libx11-6-udeb (>= 2:1.6.0), libxcursor1-udeb (>> 1.1.2), libxext6-udeb (>= 2:1.3.0), libxi6-udeb (>= 2:1.6.99.1), libxinerama1-udeb, libxrender1-udeb
+Filename: ./libgtk2.0-0-udeb_2.24.32-3+rpt1_arm64.udeb
+Size: 1552644
+MD5sum: c64cbef6c3bf7d1c2e934b9fb44cb744
+SHA1: 473e3f24ad757f315f951e38e498b1da8aff9ac7
+SHA256: f6d7454a1cdb67de49d700b08451845447083efa0199876bab99f76bb7c5829b
+SHA512: 2e4e027d579e82ef9927275091f7022cd79479ca51687279e075abdeb8b60fdddadbfd9abfa30d6d38095e2cd475f43f6d4625250193ec5808f089a47c737e73
+Description: GTK+ graphical user interface library - minimal runtime
+ This is a udeb, or a microdeb, for the debian-installer.
+ .
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the minimal runtime library using X11 needed
+ by the Debian installer.
+
+Package: libgtk2.0-0
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 5836
+Provides: gtk2.0-binver-2.10.0
+Depends: libgtk2.0-common, libatk1.0-0 (>= 1.32.0), libc6 (>= 2.17), libcairo2 (>= 1.6.4-6.1), libcups2 (>= 1.6.0), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.1), libglib2.0-0 (>= 2.41.1), libpango-1.0-0 (>= 1.28.3), libpangocairo-1.0-0 (>= 1.28.3), libpangoft2-1.0-0 (>= 1.28.3), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6, libxinerama1, libxrandr2 (>= 2:1.5.0), libxrender1, adwaita-icon-theme | gnome-icon-theme, hicolor-icon-theme, shared-mime-info
+Recommends: libgail-common, libgtk2.0-bin
+Suggests: librsvg2-common, gvfs
+Filename: ./libgtk2.0-0_2.24.32-3+rpt1_arm64.deb
+Size: 1678820
+MD5sum: 27238e00f5b48549693312c83156c73a
+SHA1: 99b12105539b4db9ddcccce6b4d7b1c90309fa49
+SHA256: b665db796486dd61188bfe71b93d22d1c543e14b4d69f4a831d7bb6960d73d8d
+SHA512: 3d2bdf2b9a249423af58cc910e7925e1af7c3f5c0ad8ed2a8d7b8a6231cdd12bdf630f058ece5c0e7db7d0073f9a44d7fb24986e0e71db4dffbb809bd562ce39
+Homepage: http://www.gtk.org/
+Description: GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the shared libraries.
+
+Package: libgtk2.0-bin
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 69
+Depends: libgtk2.0-0 (= 2.24.32-3+rpt1), libgtk2.0-common, gtk-update-icon-cache
+Filename: ./libgtk2.0-bin_2.24.32-3+rpt1_arm64.deb
+Size: 48560
+MD5sum: 7ec147cf330aeac8b105fa1fbf82639b
+SHA1: e4e5807a504b89856136278c2ea3c05c9d7a9461
+SHA256: 2e180f313471eab6ddd385e8158331359d17a213ad4a17142e9946f5539019f0
+SHA512: d8f7b7bd2085ed9ad4341fbb834e8f17b59bff6e45830aa324aede0c7d8e661b4af47d87f7c4060ff1faa8230d66eee381644c108f5b6187d689a68f052f9715
+Homepage: http://www.gtk.org/
+Description: programs for the GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the utilities which are used by the libraries
+ and other packages.
+
+Package: libgtk2.0-common
+Architecture: all
+Version: 2.24.32-3+rpt1
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 19930
+Recommends: libgtk2.0-0
+Filename: ./libgtk2.0-common_2.24.32-3+rpt1_all.deb
+Size: 2698484
+MD5sum: 94674fffced263efcaab4818f455c1fb
+SHA1: f4a1919fdc6d41209f5a7a8f8eef0f560e87c21f
+SHA256: 6326bd82f7db9a1aa58049418d274033a24af964472bbadb0a78dece3844fe09
+SHA512: 50b0f4723f6e32cda2a5d3e9cae0e5a55231d3727970840ae27cdd485a2a97795b2800ae6faf55ff9c489d18bc3793973b501dab95274fa9640a53c5627baaac
+Homepage: http://www.gtk.org/
+Description: common files for the GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the common files which the libraries need.
+
+Package: libgtk2.0-dev
+Architecture: arm64
+Version: 2.24.32-3+rpt1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 20539
+Depends: libgtk2.0-0 (= 2.24.32-3+rpt1), gir1.2-gtk-2.0 (= 2.24.32-3+rpt1), libgtk2.0-common, libglib2.0-dev (>= 2.27.3), libgdk-pixbuf2.0-dev (>= 2.21.0), libpango1.0-dev (>= 1.20), libatk1.0-dev (>= 1.29.2), libcairo2-dev (>= 1.6.4-6.1), libx11-dev (>= 2:1.0.0-6), libxext-dev (>= 1:1.0.1-2), libxinerama-dev (>= 1:1.0.1-4.1), libxi-dev (>= 1:1.0.1-4), libxrandr-dev (>= 2:1.2.99), libxcursor-dev, libxfixes-dev (>= 1:3.0.0-3), libxcomposite-dev (>= 1:0.2.0-3), libxdamage-dev (>= 1:1.0.1-3), pkg-config (>= 0.26-1), libxml2-utils
+Recommends: python (>= 2.4), debhelper
+Suggests: libgtk2.0-doc
+Filename: ./libgtk2.0-dev_2.24.32-3+rpt1_arm64.deb
+Size: 2711028
+MD5sum: 901bb6b95c599b8a6eaf6e5ec37a82e9
+SHA1: 0c3b37eda3d0bb51ca1091454a10b033fb00c130
+SHA256: 46f046597c4be47d8a2c419b5b161e79538e25b97bb3b9761cf1709e46ff06f4
+SHA512: 48d47602361497c3a6f48c241e8303cc41a0e76549a6dde0ab82679bed4be0e7e64fcdd715d92d85d68b616edd8b30f8341050f63ad7c7aec906fa5c757fbb21
+Homepage: http://www.gtk.org/
+Description: development files for the GTK+ library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the header files and static libraries which are
+ needed for developing GTK+ applications.
+
+Package: libgtk2.0-doc
+Architecture: all
+Version: 2.24.32-3+rpt1
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: gtk+2.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 18914
+Recommends: libglib2.0-doc, libatk1.0-doc, libpango1.0-doc
+Suggests: devhelp
+Filename: ./libgtk2.0-doc_2.24.32-3+rpt1_all.deb
+Size: 2077868
+MD5sum: e95632103426e91a5e5c98705d9ca109
+SHA1: aa4127e01b16d884cc4feccfe4ed197f80068b26
+SHA256: 5050c59c04a233626bcb84487c32074378adfeb1899b3f84965b1e42acf33a9e
+SHA512: 6a442a450b2436a1796266e77e5574210918c1d13e04780d611965b08d7d0e4045032d10e725af56e881b12f8594b59ff330b4e343e2aa9e0a49a6b4506dbb15
+Homepage: http://www.gtk.org/
+Description: documentation for the GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the HTML documentation for the GTK+ library
+ in /usr/share/doc/libgtk2.0-doc/ .
+
+Package: libobrender32v5-dbgsym
+Architecture: arm64
+Version: 3.6.1-8+rpt3
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 124
+Depends: libobrender32v5 (= 3.6.1-8+rpt3)
+Filename: ./libobrender32v5-dbgsym_3.6.1-8+rpt3_arm64.deb
+Size: 104228
+MD5sum: a1733a6dc3e9609935cb4df856804d5e
+SHA1: 78688e5b7a0bb0a28b3503391e72a720af135ee9
+SHA256: 1cc30bb416757192594982e77e87bc8927aec2b680c03976578d09dde8bddd2d
+SHA512: 5a04a2b982fc3cad5c4c64de7718e52a4dc47024e52d0ffba5306e03231a4c0c9a323158037fcd5e55c2ff29826445368c1703e3fd9e5da4cf5fb93d5df59318
+Description: debug symbols for libobrender32v5
+Build-Ids: c59f935d82f113ea368d0e900504df56a5fe8168
+
+Package: libobrender32v5
+Architecture: arm64
+Version: 3.6.1-8+rpt3
+Priority: optional
+Section: libs
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 153
+Depends: libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libice6 (>= 1:1.0.0), libimlib2 (>= 1.4.5), libobt2v5 (>= 3.6.0), libpango-1.0-0 (>= 1.18.0), libpangoft2-1.0-0 (>= 1.14.0), libpangoxft-1.0-0 (>= 1.14.0), librsvg2-2 (>= 2.14.4), libsm6, libx11-6, libxft2 (>> 2.1.1), libxml2 (>= 2.6.27)
+Conflicts: libobrender32
+Replaces: libobrender32
+Filename: ./libobrender32v5_3.6.1-8+rpt3_arm64.deb
+Size: 72592
+MD5sum: 31dc3d31b64384e3facd135811aa54f5
+SHA1: 1f0d8b46170fc5609223df5158f7fa0bdc5773fa
+SHA256: 1b4259673cdc7467df584b4c1a664b4912a8c02ed0ce98f60e22cbb21ded824b
+SHA512: 06a8026b8f5b2852224334dcf5c2f99cdb656cc6a5d57828e32f538083c1f3740582a5dd9450d5afa51e2679f713f5316c4daa163d8ffcc34533e8b0b2e2d3c6
+Homepage: http://www.openbox.org
+Description: rendering library for openbox themes
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the libobrender library files used by openbox
+ for theme rendering.
+
+Package: libobt2v5-dbgsym
+Architecture: arm64
+Version: 3.6.1-8+rpt3
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 117
+Depends: libobt2v5 (= 3.6.1-8+rpt3)
+Filename: ./libobt2v5-dbgsym_3.6.1-8+rpt3_arm64.deb
+Size: 94944
+MD5sum: 7b46b5e4d562d9ae55633b782b10e7f5
+SHA1: dd30a2d641a25e6a4c7067ffdda7eb4131ed8988
+SHA256: a8c7fad523b8c3c43968c1b60aadcce59b208f2fdbd27d2d800cbd01f71e961d
+SHA512: 134e87c224457dd43bf197b976dbb8912d16cf5e95161267b30a91762ebf3e47bd3a5282db55b29a525b4a6087eed74a36483f15b9cba87c36551eaa5327b554
+Description: debug symbols for libobt2v5
+Build-Ids: 6dde3c69345e8526586b7d6c4de1760cf5042b28
+
+Package: libobt2v5
+Architecture: arm64
+Version: 3.6.1-8+rpt3
+Priority: optional
+Section: libs
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 126
+Depends: libc6 (>= 2.17), libglib2.0-0 (>= 2.35.9), libice6 (>= 1:1.0.0), libsm6, libx11-6, libxext6, libxinerama1, libxml2 (>= 2.7.4), libxrandr2, libxrender1
+Conflicts: libobt2
+Replaces: libobt2
+Filename: ./libobt2v5_3.6.1-8+rpt3_arm64.deb
+Size: 65292
+MD5sum: 24c6aae10491eac3e77adf184b35be63
+SHA1: c32027aacf42985a64cf4bdc1dde8d2d45b0f0e5
+SHA256: 31233c3a214ed30ad1c5082c268ce9d47a6627138d6762437b811221e81746eb
+SHA512: 1bae5507c4aef3e1702213ac5904fb3bb379b7276d43d543fd85743d0034344a61d6adaae2b72dc0006a5e665a60ae2a460e086b934bcc9687c7721d716a4188
+Homepage: http://www.openbox.org
+Description: parsing library for openbox
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the libobt library files used by openbox
+ to load and parse configuration and theme files of openbox.
+
+Package: libplymouth-dev
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 691
+Depends: libplymouth4 (= 0.9.4-1.1+rpt2)
+Breaks: plymouth-dev (<< 0.9.2-1~)
+Replaces: plymouth-dev (<< 0.9.2-1~)
+Filename: ./libplymouth-dev_0.9.4-1.1+rpt2_arm64.deb
+Size: 114004
+MD5sum: c55c0e05e3b6c989ae9f53fa4915cba0
+SHA1: fdf560edd35c117c1ed8cc484ec32fbf49f65262
+SHA256: 67a8bebdd2df7be6f3f64e2ad435d214cbd808b5260f077380847840dae04950
+SHA512: 90040ab8933a269d4e977a1425b6bdbf7fc56bbbbf35f25aae725b97d84eb9b22b0abb86c14aebc4c2aec8488af48788cbca08a866687a510584f4fab713babf
+Homepage: http://www.freedesktop.org/wiki/Software/Plymouth
+Description: graphical boot animation and logger - development files
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the development files to build Plymouth plugins.
+
+Package: libplymouth4-dbgsym
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 328
+Depends: libplymouth4 (= 0.9.4-1.1+rpt2)
+Breaks: plymouth-dbg (<< 0.9.2-4~)
+Replaces: plymouth-dbg (<< 0.9.2-4~)
+Filename: ./libplymouth4-dbgsym_0.9.4-1.1+rpt2_arm64.deb
+Size: 250872
+MD5sum: 413c5402d45e57afc5abf8fc42e85e45
+SHA1: ffbca29e7b05671c504e032879bd939158c47df3
+SHA256: 7603784716120ada6a96d4df54804e3a775c776e9d87b6b66b8924e1842d6d57
+SHA512: bc5881b1430b6e804851694eeda215373a18b81f219ed02d441141c655a23f6be5102fb62442b7256ddcc2bf2ac2d3b9a276c088e7efa8d4e6e6ad8d07fba69f
+Description: debug symbols for libplymouth4
+Build-Ids: 55cc20889d4586a0b20ad674bb0ad692435530a5 6dbcaaced097542ae4d8f170b32a9c1c1f962c69 ba7ebc52dda1d04e735017f820ca8fc4fe26a6d3 c73b23cbf600e268ae9869a04c40fd448d90bc83
+
+Package: libplymouth4
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 309
+Depends: libc6 (>= 2.17), libpng16-16 (>= 1.6.2-1), libudev1 (>= 183)
+Breaks: plymouth (<< 0.9.2-1~)
+Replaces: plymouth (<< 0.9.2-1~)
+Filename: ./libplymouth4_0.9.4-1.1+rpt2_arm64.deb
+Size: 90616
+MD5sum: 7738759b9a87bf79ef5ef9dcec72be4d
+SHA1: 84960964c43b095445fe7f9bdabded475235d228
+SHA256: 60caa8904efaefe9fd6a12ffbeb671c7fc1d643dc8b1fdd4e89378d564571c22
+SHA512: 29086cf0da1c15c62e4fe8b5fb821fd9b3cc1e1a2264b352811bcb8ee0a55bc3a0fea096bfd7e1c6d56a4d06b375d79ff928aa27bbe2099f1199d1a58f77f290
+Homepage: http://www.freedesktop.org/wiki/Software/Plymouth
+Description: graphical boot animation and logger - shared libraries
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the shared libraries.
+
+Package: lxappearance-obconf-dbg
+Architecture: arm64
+Version: 0.2.3-1+rpt1
+Priority: extra
+Section: debug
+Source: lxappearance-obconf
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 110
+Depends: lxappearance-obconf (= 0.2.3-1+rpt1)
+Filename: ./lxappearance-obconf-dbg_0.2.3-1+rpt1_arm64.deb
+Size: 87480
+MD5sum: 51285db2d9d037dc6b3add423327cc31
+SHA1: 97a5d316a2d280d132404279743fb71f8437bde3
+SHA256: 72d44f6c031156994819947dcee32945cca8fc90d11639e08571962802896529
+SHA512: 671191ce1bcb876214a898fd11aceffc3f7003fb0c65dd2a869ff28d228826fe3aeba88b2464d2dd73ce89f571268261b435c43276613df81c49df787f4480a6
+Homepage: http://www.lxde.org/
+Description: LXDE GTK+ theme switcher (plugin - debug)
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the debugging symbols for the ObConf plugin.
+Build-Ids: d5ef74177fc0a8a6bb06bdcbf3959b772ec87829
+
+Package: lxappearance-obconf
+Architecture: arm64
+Version: 0.2.3-1+rpt1
+Priority: optional
+Section: x11
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 392
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.12.0), libice6 (>= 1:1.0.0), libimlib2 (>= 1.4.5), libobrender32v5 (>= 3.6.0), libobt2v5 (>= 3.6.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libpangoxft-1.0-0 (>= 1.14.0), librsvg2-2 (>= 2.14.4), libsm6, libx11-6, libxft2 (>> 2.1.1), libxml2 (>= 2.7.4)
+Enhances: lxappearance
+Filename: ./lxappearance-obconf_0.2.3-1+rpt1_arm64.deb
+Size: 50224
+MD5sum: 19985a6c35bf13a3734dde03013d3c7b
+SHA1: 782c8ccddac82f0448f700a6a7abd3cb88e1e493
+SHA256: e505b5c6455538fc7f8cb01a8589b87ea8446aadbb7b442368fc43941edbd792
+SHA512: 54d1b843b9848a3099d1cc87a69d8d428c307dfed0c8ebac7c4fc676c580af36e04b3c6000a432329405f800e2050d60f2c01bdddf123858417c4a346cc91ca5
+Homepage: http://www.lxde.org/
+Description: LXDE GTK+ theme switcher (plugin)
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the ObConf plugin.
+
+Package: lxde-settings-daemon-dbgsym
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 62
+Depends: lxde-settings-daemon (= 0.5.4-1+rpt1)
+Filename: ./lxde-settings-daemon-dbgsym_0.5.4-1+rpt1_arm64.deb
+Size: 43300
+MD5sum: 3455ce4fdb5e123894eebabecffc0850
+SHA1: d642f28ed460414d8d674659d3dfe98e88c51db1
+SHA256: d58074f4551c03dd185ddfd2143bd36a7c5b5b3adbcc23de2b30fdd017fe60b6
+SHA512: 633ddee2ca654f43dad7efd88f81e00f04e83b394fea2dd756a11939a291a273fd26041ada2c2dd3e790b599b61648ee138bc0101f4b6ac919a34288eab66a20
+Description: debug symbols for lxde-settings-daemon
+Build-Ids: 0a6f2cfdc8b610a042294f816f203e8f016ac146
+
+Package: lxde-settings-daemon
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Multi-Arch: allowed
+Priority: optional
+Section: x11
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 44
+Depends: libc6 (>= 2.17), libglib2.0-0 (>= 2.24.0), libx11-6
+Breaks: lxsession (<< 0.5.3-1)
+Replaces: lxsession (<< 0.5.3-1)
+Filename: ./lxde-settings-daemon_0.5.4-1+rpt1_arm64.deb
+Size: 17040
+MD5sum: cd947f65012a652607092d4ce65cf7cb
+SHA1: d0bea63ce7bbd6d4d7e84f93aeb70dbff4184de5
+SHA256: d09bdd42abdbd54beefbbd61c1f17f114a8713152a5808b762a594afe5ebe619
+SHA512: 862aa5e10e65231cf0d15bcbfa28ea915963504390e25082e70f7e514cde9fc82be28e9ad5f1861cb6ffc342503eb6c41bbfe745303b3ae701937ee35fda3a3c
+Homepage: http://www.lxde.org/
+Description: xsettings compliant configuration manager for LXDE
+ The package contains the LXDE daemon which handles the session settings.
+ It conforms to the FreeDesktop.Org XSettings standard.
+ .
+ LXSession also privides this functionality internally.
+
+Package: lxlock
+Architecture: all
+Version: 0.5.4-1+rpt1
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 23
+Depends: light-locker | xscreensaver | gnome-screensaver | i3lock | suckless-tools | slim
+Breaks: lxsession (<< 0.5.3-1)
+Replaces: lxsession (<< 0.5.3-1)
+Filename: ./lxlock_0.5.4-1+rpt1_all.deb
+Size: 9460
+MD5sum: 2b821a1be635715723719a16b5ca2562
+SHA1: 774f4564594dc6e1cd793bde9d3468e0003fe14f
+SHA256: f6c0005ff8e0a85daab7e4da38d38f27549f2638254e25299a45012868e0c986
+SHA512: 18d5098411254c1309c30a65a11b3b59e7c27150f3b585dc840c84329fd350ea7df8f077d39eabb02c2a59528bb9185fe70ecd8e582013002868ec4c07d486d1
+Homepage: http://www.lxde.org/
+Description: simple locking utility for LXDE
+ LXLock is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ It's a simple locking utility for LXDE.
+
+Package: lxpanel-data
+Architecture: all
+Version: 0.10.0-2+rpt7
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: lxpanel
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 2801
+Breaks: lxpanel (<< 0.7.0)
+Replaces: lxpanel (<< 0.7.0)
+Filename: ./lxpanel-data_0.10.0-2+rpt7_all.deb
+Size: 1065400
+MD5sum: 73c23e84e3bb24321d03bbeb10fe2d1b
+SHA1: 61c47c6f419b8eac57c26cb54e13f7ade4515161
+SHA256: cf931215eae1eb13ca43e7335fed04064f48e70cac9befd37a0b0b50cb77f170
+SHA512: cce0f0c9d4fe67baea3d6a6137ca8f8537174e1f3dd4a149dce2e6f74e70b17f4af82ba52ea6fd324c471b38159f18879324014a8feb75a048e8ccb83690c580
+Homepage: http://www.lxde.org/
+Description: LXDE panel (data files)
+ LXPanel is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the data required for panel.
+
+Package: lxpanel-dbg
+Architecture: arm64
+Version: 0.10.0-2+rpt7
+Priority: optional
+Section: debug
+Source: lxpanel
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 1400
+Depends: lxpanel (= 0.10.0-2+rpt7)
+Filename: ./lxpanel-dbg_0.10.0-2+rpt7_arm64.deb
+Size: 1178120
+MD5sum: a24e3c187ec74b0f9c8900cf18726701
+SHA1: 08b9cb0478af45ffd33c4270ad7857b50384e8e3
+SHA256: 65fe0d0ff855e3644882288366d13f7080151d25bb7ef843e332caae74cb7b12
+SHA512: e0bc5ab6a3c5e8cf787ee823f36a1dbc1b603191c0d7f81d89d4220328dd7c678e37faa792454557aef19855f06715d669c4fd03dff1e171a70b7d04b8500834
+Homepage: http://www.lxde.org/
+Description: LXDE panel (debug)
+ LXPanel is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the debugging symbols.
+Build-Ids: 111f9c9026b26968ee166508d0282f63c0b57e34 23c6e4625ed1c528b8e22bf5457d28a2116b72e0 3f85071015254c55f238a90f8ec24305d26b1f2a 4e49fbed705715d6b3956f603a393ea167c42157 4fb0af05dd952349b1ad4b596b6c2bbacb214326 5bc4181f0a5cab47e2fa982e2e03a5e7016159fe 635cdf205b4d3198ea68e0d4f364ca11c7a1a555 6b278ee5db740abce4504fbecaceb8b3b864ed4d 6cff830161b0fd18491fc9f900ca3182d338d06d 88838dd0bf8c54ef2007a272faa357c331fffd64 9d04739459732b28c0e470b74cb7cfce85ef2394 bc386d3fc6e78b52b3829fd0736cc5a505160ade c30d0383d03574db0d0842e399b3861fd729dc0e ce055f3ae2716abc96dd90117242b65759c93c8f d05be76684ab8deb8402faa457e919874417a7e1
+
+Package: lxpanel-dev
+Architecture: arm64
+Version: 0.10.0-2+rpt7
+Priority: optional
+Section: x11
+Source: lxpanel
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 79
+Depends: lxpanel (= 0.10.0-2+rpt7), libgtk2.0-dev, libfm-gtk-dev (>= 1.2.0)
+Breaks: lxpanel (<< 0.8.2)
+Replaces: lxpanel (<< 0.8.2)
+Filename: ./lxpanel-dev_0.10.0-2+rpt7_arm64.deb
+Size: 30300
+MD5sum: b88e6ef6b9540bbbd579ee00a9fb302c
+SHA1: 3aa295443ec0cee0a8bc522498bbe730f30bfac5
+SHA256: b6176de103d7bf7c383bb380fada56ef3a11a984ae3717aadd3c4cbf38f3fddf
+SHA512: a222b57f9ed78ee2cadc82ff903f8a2389361453c4b48563f05017e37f7e862e398336f71534cf85d5be58e728ddcc297a29af657d1a7694d53991c399d86086
+Homepage: http://www.lxde.org/
+Description: LXDE panel (plugins development files)
+ LXPanel is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains header files required for plugins development and
+ depends on other relevant packages for such task.
+
+Package: lxpanel
+Architecture: arm64
+Version: 0.10.0-2+rpt7
+Multi-Arch: allowed
+Priority: optional
+Section: x11
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 770
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libcurl3-gnutls (>= 7.16.2), libfm-gtk4 (>= 1.2.0), libfm4 (>= 1.2.0), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk2.0-0 (>= 2.24.32), libiw30 (>= 30~pre1), libkeybinder0 (>= 0.3.0), libmenu-cache3 (>= 0.5.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libwnck22 (>= 2.30.7), libx11-6, libxml2 (>= 2.7.4), lxmenu-data, lxpanel-data (= 0.10.0-2+rpt7), libfm-modules
+Recommends: xkb-data, lxterminal | x-terminal-emulator, pavucontrol | gnome-alsamixer, libnotify-bin, notification-daemon
+Suggests: menu, firefox-esr | firefox | www-browser
+Filename: ./lxpanel_0.10.0-2+rpt7_arm64.deb
+Size: 207464
+MD5sum: 42aa0ef4a6f9556db5f499f6db9687cd
+SHA1: 9bcf17e72069a63240ae5527aae39d8b3ebdd8d7
+SHA256: d482e5b8694cbcc8f389ad874494451bf866a9323468daa09934041b99ca108b
+SHA512: 81a52c82e1cb2004ae63fb58d26c656a25b795f71a891506beae291c7a0cbd310d83867c33af4e58feb524a64534da4b08451f536b878a9538b2918c1d0d782d
+Homepage: http://www.lxde.org/
+Description: LXDE panel
+ LXPanel is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ It is derived from fbpanel and includes the following features:
+ .
+  * User-friendly application menu automatically generated from .desktop
+    files on the system
+  * Launcher bar (small icons clicked to launch apps)
+  * Task bar supporting ICCCM/EWMH `urgency' hint (Pidgin IM windows
+    can flash on new incoming messages)
+  * Run dialog (type a command to run, without opening a terminal)
+  * Net status icon plug-in (optional).
+  * Volume control plug-in (optional).
+  * Notification area (system tray).
+  * Digital clock.
+  * Keyboard LEDs plug-in (display caps/num locks).
+  * lxpanelctl: control lxpanel from other programs.
+    For example, "lxpanelctl run" will show the Run dialog in lxpanel,
+    and "lxpanelctl menu" will show the application menu. This is
+    useful in combination with window manager key bindings.
+
+Package: lxplug-bluetooth-dbgsym
+Architecture: arm64
+Version: 0.12
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxplug-bluetooth
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 77
+Depends: lxplug-bluetooth (= 0.12)
+Filename: ./lxplug-bluetooth-dbgsym_0.12_arm64.deb
+Size: 57428
+MD5sum: 32af4e8af4c4b3453efcb7378b8a9c06
+SHA1: f8adacf6336810156a412359ccc243007125ab24
+SHA256: b6fd4413c67b8edfe7cad1e8f2067755748007d3c5a51d41ca8218a401dd5f2a
+SHA512: e987b0ab34631d7b2646e81eee83a5eaf3fc211fe7f485edaacf32b851653fb9bbbbc102435f6801444c2e493ab0d9f89bedcd5b84d0757c0a512d9904046854
+Description: debug symbols for lxplug-bluetooth
+Build-Ids: 6e0de2c2b4e61d20a2e7b451adf32ccc5156d9b5
+
+Package: lxplug-bluetooth
+Architecture: arm64
+Version: 0.12
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 72
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfm-gtk4 (>= 0.1.12), libfm4 (>= 0.1.12), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.30.0), libgtk2.0-0 (>= 2.18.0), libmenu-cache3 (>= 0.3.2), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libwnck22 (>= 2.30.7), lxmenu-data, lxpanel, lxpanel-data, libfm-modules
+Recommends: bluealsa, pi-bluetooth
+Filename: ./lxplug-bluetooth_0.12_arm64.deb
+Size: 18312
+MD5sum: feb221395eba72d91345cbd5969f8733
+SHA1: 698f602bfef33d75d33579f1800542488c3b0806
+SHA256: 5b5c5bc30ecf8e89b23537722ac7bc20ac4a1a96a0ba9c214749e57d50101d8b
+SHA512: c14087c41f407bfb0b73e6185860fd73c9581fab2988ba3b93d8374a82deb7c3cc2ab935a99cf400a99d744bc1688c1a4ebb3b8d0206a1bcac3e35ebeed0db22
+Homepage: http://raspberrypi.org/
+Description: Bluetooth plugin for lxpanel
+ Plugin for lxpanel to control pairing and connection of Bluetooth devices.
+
+Package: lxplug-cputemp-dbgsym
+Architecture: arm64
+Version: 0.1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxplug-cputemp
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 45
+Depends: lxplug-cputemp (= 0.1)
+Filename: ./lxplug-cputemp-dbgsym_0.1_arm64.deb
+Size: 29332
+MD5sum: 693297bf203f87f01d8e5f8bcdefd33a
+SHA1: e542534e7b34b22c7c5d39eca19c11d1e9116d33
+SHA256: 27366459fc686c99974c1f590068cec943959c5432e27c1d5d9516e163c3e2a0
+SHA512: 44917e31a0cae4846c6a11bbb48d83eec40475fadf392f9c5e8b593dabdd55222e71834e09b44f6d35f7c170bd0e6c96af79a29d62d84f997bda8fac552fb33b
+Description: debug symbols for lxplug-cputemp
+Build-Ids: 5f61dc43001398f10eb4a4b28337e37e7327172b
+
+Package: lxplug-cputemp
+Architecture: arm64
+Version: 0.1
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 39
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.18.0), libmenu-cache3 (>= 0.3.2), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), lxmenu-data, lxpanel, lxpanel-data
+Filename: ./lxplug-cputemp_0.1_arm64.deb
+Size: 8852
+MD5sum: 8d2c6f67485bed166e7e262162cd7846
+SHA1: 1c149dda9f3dd48a01c9fec15c90ab037f13cb54
+SHA256: 62931c1099fe7a2768916b7eac403e931e3413cac6df8721e3e0529f1b04915a
+SHA512: 61bc7457b44a07dbc66a97f29e98ab367e94257effef04a866a14cab55333617d9e42d90d5a2cab60b6681ceb5396ef2969284164986fc46da5c977e4cc0bc48
+Homepage: http://raspberrypi.org/
+Description: CPU temperature plugin for lxpanel
+ Plugin for lxpanel to show graph of CPU temperature.
+
+Package: lxplug-ejecter-dbgsym
+Architecture: arm64
+Version: 0.9
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxplug-ejecter
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 50
+Depends: lxplug-ejecter (= 0.9)
+Filename: ./lxplug-ejecter-dbgsym_0.9_arm64.deb
+Size: 32644
+MD5sum: 97043b738e02c84f81ef8753cd30dd2b
+SHA1: 1fb2ff3fa2e71ab1a74eb7f4929989f8cd206680
+SHA256: 1a686b98ac6472322485cb2b9f861ab7581e1e2c4f64470c45d5dd491f4f15e1
+SHA512: 6da2be96c46d73dffefa2726667f332ebc0cd0408db3db1dc8687423a2743c216ba20dd0184618cf1b57615e39df7d18791e606dd2ca60a95b5cbf97560362af
+Description: debug symbols for lxplug-ejecter
+Build-Ids: 7681650cc06b9092f883b02ef84e33bf004ad131
+
+Package: lxplug-ejecter
+Architecture: arm64
+Version: 0.9
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 44
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfm-gtk4 (>= 0.1.12), libfm4 (>= 0.1.12), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.22.0), libgtk2.0-0 (>= 2.18.0), libmenu-cache3 (>= 0.3.2), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libwnck22 (>= 2.30.7), lxmenu-data, lxpanel, lxpanel-data, libfm-modules
+Filename: ./lxplug-ejecter_0.9_arm64.deb
+Size: 9612
+MD5sum: 39454cc506df661235b6dafaee1b9234
+SHA1: 5cd4b3119e9648eb07f27d5f7cf8e5fe1cea2d5d
+SHA256: b30ca438bf01e8c0c8f50243d089eaa26ebd2d7f7865168fe0631326c2997fac
+SHA512: 549b7eb9f55b9b9a212f3c752bda971001c1595168ab4388d68cea2ece0a46d0856c08afbfe03e818a48411b5a6068b201e427f0a8c0e00ad54ad43620d634af
+Homepage: http://raspberrypi.org/
+Description: Ejecter plugin for lxpanel
+ Plugin for lxpanel to safely eject USB devices before removal.
+
+Package: lxplug-network-dbgsym
+Architecture: arm64
+Version: 0.18
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxplug-network
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 163
+Depends: lxplug-network (= 0.18)
+Filename: ./lxplug-network-dbgsym_0.18_arm64.deb
+Size: 136728
+MD5sum: 939236dfd8b70244fa13e0f5750d97d2
+SHA1: aa94755c485834dfc04739be4cc3c3fda24d83a6
+SHA256: c94fa8303dfdbca13b995229ff2dd46ef11ae358581423e911c8e90e43852c15
+SHA512: 6c3d7058546dca72d96982b1242b1d56150953c8ff6278622300a22b46d0c8e1a7d20da5a91209e04af5f908e2dae6d237414d8138905f007629393ad4d83c88
+Description: debug symbols for lxplug-network
+Build-Ids: 174751b1b2fadc7471f0bba0a1f0ebde2185d25d
+
+Package: lxplug-network
+Architecture: arm64
+Version: 0.18
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 118
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfm-gtk4 (>= 0.1.12), libfm4 (>= 0.1.12), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.18.0), libmenu-cache3 (>= 0.3.2), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libwnck22 (>= 2.30.7), lxmenu-data, lxpanel, lxpanel-data, libfm-modules, rc-gui (>= 1.18)
+Filename: ./lxplug-network_0.18_arm64.deb
+Size: 35736
+MD5sum: 445124e4c82f28af1a96fedbd53975c3
+SHA1: 00c26a32dc62cdd229678995c0137795a008beff
+SHA256: 2109edaaf91fdfa9f1a0a00992458957af21d4313d778395c58dd36a49b7c62a
+SHA512: 1068f1d233444cb7d99d6ed9ae9bb5aba57468d55c5efd87ef4f701b2b116409b01e1a09df7d9945356bac3e244113131e860a4e38c992460130135a7a23575a
+Homepage: http://raspberrypi.org/
+Description: Network plugin for lxpanel
+ Plugin for lxpanel ported from dhcpcd-ui to control connection to
+ wireless and wired networks.
+
+Package: lxplug-ptbatt-dbgsym
+Architecture: arm64
+Version: 0.8
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxplug-ptbatt
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 46
+Depends: lxplug-ptbatt (= 0.8)
+Filename: ./lxplug-ptbatt-dbgsym_0.8_arm64.deb
+Size: 30712
+MD5sum: bee37a46dad9f9af157eabf38db8f3ed
+SHA1: b24ed64b9fa890571bb92c34102deca40ea51818
+SHA256: 12b60c307150e8b63763691efc1ff396233c38c1290b0ccafc81c88ecf0c4a30
+SHA512: 485b7b78b708ced5fd077195f5c4e4a6069ed07e9685ec35bb028e7ab7d32a65d3bbdea92d21c5566c60cf8e62a1e9f7085254ecf799c48f8125b5a7c8ac24e8
+Description: debug symbols for lxplug-ptbatt
+Build-Ids: c134581435c0f93469ca79b61d62133a4ec7e8c5
+
+Package: lxplug-ptbatt
+Architecture: arm64
+Version: 0.8
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 46
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfm-gtk4 (>= 0.1.12), libfm4 (>= 0.1.12), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.18.0), libmenu-cache3 (>= 0.3.2), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libwnck22 (>= 2.30.7), lxmenu-data, lxpanel, lxpanel-data, libfm-modules
+Filename: ./lxplug-ptbatt_0.8_arm64.deb
+Size: 12728
+MD5sum: 76ac3fd4369d45990310307289b3347f
+SHA1: 6cb736ed5fb655d4412c41576a381ef5f60ea371
+SHA256: 6439e7dedd8dbcc250f7d0bae19fc9f98e20431ec376805c0facb7af6e1c63e1
+SHA512: 476b09cb91f96596345cdb5eaa42d766659e6abf2130c47ca31d919ec9ecec3dd1f5d2d58f814c4c03464cd07505f2e70f948125a1f5b7fb9e3c84ec70d81d1d
+Homepage: http://raspberrypi.org/
+Description: Battery monitor plugin for lxpanel
+ Battery indicator plugin for lxpanel, for PiTop.
+
+Package: lxplug-volume-dbgsym
+Architecture: arm64
+Version: 0.20
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxplug-volume
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 94
+Depends: lxplug-volume (= 0.20)
+Filename: ./lxplug-volume-dbgsym_0.20_arm64.deb
+Size: 70940
+MD5sum: 08d0a3142e77ed36fd4fa51f6c9370d5
+SHA1: ab91a51433f4e2ea0fb06ade4e85eef8e3e0e1e0
+SHA256: bd88b878b4c7f6ef83400c893bf642e3ac10c21918ee2467b026d6a3dbdda9c3
+SHA512: 12a2fc7f40689be81b73a2a4d89f17156a58654e89fdcc04d8cdff70e9d53ac79dc0bdab4efd7ef1a1befbedd8abae39f79d87c7a6157af6b67f6d12da227203
+Description: debug symbols for lxplug-volume
+Build-Ids: 3d994a67f6d0a1d1a3fd93f51cfd35ecf6c22a87
+
+Package: lxplug-volume
+Architecture: arm64
+Version: 0.20
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 90
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfm-gtk4 (>= 1.2.0), libfm4 (>= 0.1.12), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.24.0), libmenu-cache3 (>= 0.3.2), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libwnck22 (>= 2.30.7), libxml2 (>= 2.6.27), lxmenu-data, lxpanel, lxpanel-data, libfm-modules
+Recommends: bluealsa, pi-bluetooth
+Filename: ./lxplug-volume_0.20_arm64.deb
+Size: 23776
+MD5sum: d11651878e7e3342942791eba33dc3d4
+SHA1: 3a6d39315b716555734026ddee45aa1cd0fec4f6
+SHA256: 51a769d6bb5e76a4a7be90b40bd67cf43489fd65cb04ed9cbd3cd9a3562c913a
+SHA512: b5a543631b5a85ae67e1f64b5ba15eaf44a8349d311db79b29053d6a4a4c0339996e7055f7465ae0431a22d6aef491a43001b651e01d5d0c9d578746d4fb8fd0
+Homepage: http://raspberrypi.org/
+Description: Volume plugin for lxpanel
+ Plugin for lxpanel to control volume for ALSA and Bluetooth devices for Raspberry Pi.
+
+Package: lxpolkit-dbgsym
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 51
+Depends: lxpolkit (= 0.5.4-1+rpt1)
+Filename: ./lxpolkit-dbgsym_0.5.4-1+rpt1_arm64.deb
+Size: 32872
+MD5sum: 1ca6995b5d27afab2bc47387178c08cb
+SHA1: adc1e7ad44355f879f899facc4fae1d9025de0ec
+SHA256: 9e4d53026bb48a59f60749d6d6404e4a298a375185def3df67834c743f83193d
+SHA512: 93037c444a9d886c8b49acd3e542d39bb5d838ce8f2d2514c3771942a64a90e4ad6ee7ab3ea8f9708893c588619e59de04390cddb044d2773e2d1d2296894c47
+Description: debug symbols for lxpolkit
+Build-Ids: 687f4824be77f7fe987253af583079a6654fa35c
+
+Package: lxpolkit
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Multi-Arch: allowed
+Priority: optional
+Section: x11
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 51
+Provides: polkit-1-auth-agent
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.12.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libpolkit-agent-1-0 (>= 0.94), libpolkit-gobject-1-0 (>= 0.94), libunique-1.0-0 (>= 1.0.0), libx11-6, lxsession-data, policykit-1
+Breaks: lxsession (<< 0.5.3-1)
+Replaces: lxsession (<< 0.5.3-1)
+Filename: ./lxpolkit_0.5.4-1+rpt1_arm64.deb
+Size: 15400
+MD5sum: 2f664c12a216a687dd56f6b6dab09565
+SHA1: 98f100350a79521733bf3af25f6f761585a19db2
+SHA256: 953cfa5b1136ff12b1b44ea95e91d2ee1f338226cded16dec3771bd84fd38f82
+SHA512: 84e2ad0c5092c711320603bf8442f2682e6813454443eee37a493f8f784a8e50867ef4a8fe6fbda82da3459e21a0b009a27ef6ee6143902938c65857277c2b60
+Homepage: http://www.lxde.org/
+Description: LXDE PolicyKit authentication agent
+ LXPolkit is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ It's a simple PolicyKit authentication agent.
+
+Package: lxsession-data
+Architecture: all
+Version: 0.5.4-1+rpt1
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 734
+Breaks: lxsession (<< 0.5.3-1)
+Replaces: lxsession (<< 0.5.3-1)
+Filename: ./lxsession-data_0.5.4-1+rpt1_all.deb
+Size: 121440
+MD5sum: 8a99f76c00794281132a5ca005572229
+SHA1: 4eef90a6865821f9ec096533c19610f5b1338a3f
+SHA256: 2bc1cbc72f38294a5d76bad51758bf3547c372124972902cdbfc798c2686374a
+SHA512: ba4104b59eda31ce8ab4a5a15bf35d363885d2c44af868e118f32d3a0db6c94ffc75dba4dc3d2879c2c9e235e54cc9e96939288dca1588daa7c81aa98b08e4a3
+Homepage: http://www.lxde.org/
+Description: Common files for lxsession
+ LXSession is the default session manager for the Lightweight X11 Desktop
+ Environment (LXDE).
+ .
+ This package provides common files for lxsession and supplementary packages.
+
+Package: lxsession-dbgsym
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 652
+Depends: lxsession (= 0.5.4-1+rpt1)
+Filename: ./lxsession-dbgsym_0.5.4-1+rpt1_arm64.deb
+Size: 528868
+MD5sum: d41ec919e41ae92af842ea830af40297
+SHA1: 78855f93c13bd9d55c6f40a5750de044c4b7ae20
+SHA256: 958255f4a906a08b8f33d7c4ca900a2aa7501ddf71c9a92c555ca77d72ca16df
+SHA512: 5b6da38110d6ad00b49cd0beab0822468be00ba10ffccdc035ea344f67ede8987c8d15a187a26507b032e78c6037e91db78e30aed490fbb7796b0914d1463b5e
+Description: debug symbols for lxsession
+Build-Ids: 1b4df29c5b2703ceb296061711dee728eca161e2 5b44a7c13d68839cb0816a8bf80050f142ffdf99 ea25d873096b3954f157599e4e943e752724cfb0 f63aa621cca8cf3cf09dded06a1fce7ff663f888
+
+Package: lxsession-default-apps-dbgsym
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 260
+Depends: lxsession-default-apps (= 0.5.4-1+rpt1)
+Filename: ./lxsession-default-apps-dbgsym_0.5.4-1+rpt1_arm64.deb
+Size: 224148
+MD5sum: 24441f6ef9d3688b5f3eead5a13301ec
+SHA1: 8e799804e5c244eebd7d1551f093ed8e0d087842
+SHA256: cebe9274207f8cb07a61bedc2395999356ed91ad55ded1cea673d6c3413f4eda
+SHA512: e33b6c9664d963965d4e1ebbd6e2e54f9d38f10d05326326170650b0b04bc3c5ffe6bd5cc0b3b0a8ec757a5f9be57fc351197d6dea70ccccd9599121366b81cc
+Description: debug symbols for lxsession-default-apps
+Build-Ids: 9c3a77fb1f2b2567f86a06970ccb9ac0a1d4da39
+
+Package: lxsession-default-apps
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Multi-Arch: allowed
+Priority: optional
+Section: x11
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 463
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.32), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libx11-6, lxsession, lxsession-data
+Breaks: lxsession (<< 0.5.3-1)
+Replaces: lxsession (<< 0.5.3-1)
+Filename: ./lxsession-default-apps_0.5.4-1+rpt1_arm64.deb
+Size: 50908
+MD5sum: d03089ccb393813e7bbe54f960495225
+SHA1: 0844b9a84ba2729c1bad045476f083d35a8cfd8b
+SHA256: 498be8258cbbbc154ab54572989b941474449067cf70d1624eb5055565a6a68a
+SHA512: c08f545feddae6f190bd0f41e563a9c445b4a7b42d8596772a8e5a1bdfc89cda76887a4e39e9a5ddc0b7ab414afceeb07f1ffe0281a641e2cf9e4b88de1353f9
+Homepage: http://www.lxde.org/
+Description: utility to configure lxsession and its default applications
+ LXSession is the default session manager for the Lightweight X11 Desktop
+ Environment (LXDE).
+ .
+ LXSession-Default-Apps is an utility to configure lxsession and its default
+ applications.
+
+Package: lxsession-edit-dbgsym
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 44
+Depends: lxsession-edit (= 0.5.4-1+rpt1)
+Filename: ./lxsession-edit-dbgsym_0.5.4-1+rpt1_arm64.deb
+Size: 27372
+MD5sum: 8f26643006e2e65ab3576f2e85aa0f88
+SHA1: 25395b86947f9ae0b8f7238f0b4311b480b077f6
+SHA256: 2a148a9470c3678312ada61c2f1180b1e6b7d6c9ff433ea35b82be6125b5f698
+SHA512: e92b2c2f347afd2309e5f74451b03f69240e9b3957e96f5cd928d9156911b54b44152b45c7746adb248d784d4469983e461b37fbf513d111ac258e6681045728
+Description: debug symbols for lxsession-edit
+Build-Ids: 165633533e5feb0d8624d2a4dd13cd75c7a77d03
+
+Package: lxsession-edit
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Multi-Arch: allowed
+Priority: optional
+Section: x11
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 63
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.12.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), lxsession-data
+Breaks: lxsession (<< 0.5.3-1)
+Replaces: lxsession (<< 0.5.3-1)
+Filename: ./lxsession-edit_0.5.4-1+rpt1_arm64.deb
+Size: 18988
+MD5sum: 2b78fb5aa272c04b4ad926b2fc42daff
+SHA1: d47b2af52d6efcd76365a259b22ea7418e51889e
+SHA256: 9530a42018fcd12e9dc08f6195f4fbf70e83db5599c88389372c473deb2e3250
+SHA512: cc11d218cd3b29c33b005ef158b96fb2e27752f049188468c60c0611be78b9a4eaf7bb5f8213ab6ab42c9d77d65eeb2505ea0e15378aac04da70a9aa5db3c8d4
+Homepage: http://www.lxde.org/
+Description: configure what application start up automatically in LXDE
+ LXSession-Edit is a simple session editor GUI for autostarting applications
+ which follows autostart specs from FreeDesktop.Org.
+ .
+ This package can be used without lxsession package as well.
+
+Package: lxsession-logout-dbgsym
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 52
+Depends: lxsession-logout (= 0.5.4-1+rpt1)
+Filename: ./lxsession-logout-dbgsym_0.5.4-1+rpt1_arm64.deb
+Size: 33536
+MD5sum: 9c8b0735d420e739fb335dee4e9ffa9b
+SHA1: 8d213242e7501cabd522a2b821297640b9399422
+SHA256: 5663d0d4083a486cfa16949a9b38ba6c6463bc84f49739666d410a0fec7566a5
+SHA512: cc2fc7fbfa3b9df29f7260510c76bc868df54bcb040ad06d712c6de16117a28d59f9820c98367f8fdb6ac4908cc51edc923b8e328881ca02489fb721164505f6
+Description: debug symbols for lxsession-logout
+Build-Ids: 799b07f62da032929da4ca843a22034ae4be0e85
+
+Package: lxsession-logout
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Multi-Arch: allowed
+Priority: optional
+Section: x11
+Source: lxsession
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 49
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libx11-6, lxsession-data, lxlock | xdg-utils, policykit-1
+Recommends: lsb-release, consolekit | systemd
+Breaks: lxsession (<< 0.5.3-1)
+Replaces: lxsession (<< 0.5.3-1)
+Filename: ./lxsession-logout_0.5.4-1+rpt1_arm64.deb
+Size: 17536
+MD5sum: 1dadc2a2a5e1d9939f52b665b9f16282
+SHA1: c61cec07db070b2c5c1d813b1e6a84f9fab83f4d
+SHA256: 566666fad64d87050ca16fe0726c7e42a0058d54507cf61e530d38bcf4bb213e
+SHA512: c1359bb64fdbe8072e8fb68c2aa8040a467e00401c0e2e966c129d629ecaa99d31e0fdaa68f55b1962e35f04aad4ad4124f931db6fc7a1692a50cb53e669f15b
+Homepage: http://www.lxde.org/
+Description: utility to logout from a LXDE or an Openbox session
+ LXSession is the default session manager for the Lightweight X11 Desktop
+ Environment (LXDE).
+ .
+ LXSession-Logout is a simple utility for stopping or logging out from a LXDE or
+ an Openbox session.
+
+Package: lxsession
+Architecture: arm64
+Version: 0.5.4-1+rpt1
+Multi-Arch: allowed
+Priority: optional
+Section: x11
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 385
+Provides: lxde-settings-daemon, x-session-manager
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.32), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libunique-1.0-0 (>= 1.0.0), libx11-6, lsb-release, laptop-detect, lxpolkit | polkit-1-auth-agent, lxsession-data, lxsession-logout
+Recommends: lxde-session, lxsession-default-apps | lxsession-edit, openssh-client | ssh-client
+Suggests: gpicview, lxpanel, pcmanfm, consolekit | libpam-systemd
+Breaks: lxsession-data (<< 0.5.3-1)
+Replaces: lxsession-data (<< 0.5.3-1)
+Filename: ./lxsession_0.5.4-1+rpt1_arm64.deb
+Size: 101176
+MD5sum: 077edbdb52c0066559d2b70cf6236315
+SHA1: 280a1ccfa67d08526522c07e97030bcaf0139dfc
+SHA256: 2cac5a75432411d35ae8607fa3049043c4dda67d7c0d8b9c416b0f73640e5d52
+SHA512: 4bec356d17f374a42e61499b246be8c60b4dd0e27b449b12f153e4814dacd37417ecfb6503999623c59590cb42402d6c9c8c26538e688be9e0ddd8f51ec9be08
+Homepage: http://www.lxde.org/
+Description: LXDE default session manager
+ LXSession is the default session manager for the Lightweight X11 Desktop
+ Environment (LXDE).
+ .
+ It is derived from XSM, has fewer dependencies and more features. It is
+ desktop-independent and can be used with any window manager.
+
+Package: lxterminal-dbgsym
+Architecture: arm64
+Version: 0.3.2-1+rpt2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: lxterminal
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 106
+Depends: lxterminal (= 0.3.2-1+rpt2)
+Breaks: lxterminal-dbg (<< 0.3.0-3~)
+Replaces: lxterminal-dbg (<< 0.3.0-3~)
+Filename: ./lxterminal-dbgsym_0.3.2-1+rpt2_arm64.deb
+Size: 79772
+MD5sum: fb32e58b5c3914eb7737abb45b4e8fac
+SHA1: 51358211e5d7f631de8361e62b0a7e7f7c093a28
+SHA256: bcf7d49853b6a172e49849c6964935f20b042379c655b3d1fa83a99be91868b2
+SHA512: 39ef16c8ad3b7c1ca1506135224eb1cf21dbbcb76c0363ab6544cb2c8ecc65f206308eead0fce87a054eb6de282a7c016de9cb3fde02d67d6ab2961702e4bdc2
+Description: debug symbols for lxterminal
+Build-Ids: 5f29e346e2f83d5c9f0eeb708ea07f0ab04a5ca3
+
+Package: lxterminal
+Architecture: arm64
+Version: 0.3.2-1+rpt2
+Priority: optional
+Section: x11
+Maintainer: Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>
+Installed-Size: 572
+Provides: x-terminal-emulator
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.28.0), libgnutls30 (>= 3.6.5), libgtk-3-0 (>= 3.3.16), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpcre2-8-0 (>= 10.32), libvte-2.91-0, zlib1g (>= 1:1.1.4)
+Filename: ./lxterminal_0.3.2-1+rpt2_arm64.deb
+Size: 92264
+MD5sum: c848a5d0a6284b173af277a50750e7ff
+SHA1: da7913542a6bbf95abbe3cdf79821299da258ebe
+SHA256: 2a7aaba048dda3861440013e52bec5fcac82cf089ce9cc3531c71871782898c4
+SHA512: 31d4b2234dd6a47e96f4b1178df98a3d55c351c26839752e571f33b74953e63c95616f709701a1e82ea4dbbca883830df83e26fe79f963e9bba5d706437a4c42
+Homepage: http://www.lxde.org/
+Description: LXDE terminal emulator
+ LXTerminal is a VTE-based terminal emulator for the Lightweight X11 Desktop
+ Environment (LXDE).
+ .
+ It supports multiple tabs and has only minimal dependencies thus being
+ completely desktop-independent. In order to reduce memory usage and increase
+ the performance, all instances of the terminal are sharing a single process.
+
+Package: openbox-dbgsym
+Architecture: arm64
+Version: 3.6.1-8+rpt3
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 884
+Depends: openbox (= 3.6.1-8+rpt3)
+Filename: ./openbox-dbgsym_3.6.1-8+rpt3_arm64.deb
+Size: 784408
+MD5sum: 6e70e37a611d5d905cabeea02cfb00c3
+SHA1: 35b5920b8b132a11af57e606881c5dad58d8563a
+SHA256: 043c5a57d285558feaa16adea5aa700486754fe96a269dc62dc84cb29e83dff4
+SHA512: 1cd58576863f97200898ac9aa148705433d18ffe1eb593905a016e98ba25cb29d750dae265c1a477c30443d53353fb3b83a0b5c0a4ec68f17ec82a0473690062
+Description: debug symbols for openbox
+Build-Ids: 64bd50d2c55b0e331ae9b16ee41f7db045a6dfa8 d270ba6824424faa8f4b3b9a0eacb7715a49f8cc e516b3ee15e54b91f2dfb2cc6eb2fd5985402f20
+
+Package: openbox-dev
+Architecture: arm64
+Version: 3.6.1-8+rpt3
+Priority: optional
+Section: libdevel
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 393
+Depends: libobrender32v5 (= 3.6.1-8+rpt3), libobt2v5 (= 3.6.1-8+rpt3), libxml2-dev, libglib2.0-dev, libpango1.0-dev, libimlib2-dev, librsvg2-dev, libxcursor-dev
+Filename: ./openbox-dev_3.6.1-8+rpt3_arm64.deb
+Size: 110036
+MD5sum: 6366d0a328465a0b5926f79c8bfee62e
+SHA1: 6764d356501443d17fbe72ace9c6195f62592348
+SHA256: 03d991e5b5fe83a84f70a9aba7526fc1e02471834bbef1094d1149fe12229b01
+SHA512: cd9de509d95bd264f69dfdc4b77ae5cb9028979111831bf2854b1cd731ea4e01f5b6608cc6c1669799172ea336afd48f308b9e22948931396ca601dd24483e1c
+Homepage: http://www.openbox.org
+Description: development files for the openbox window manager
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the development headers for building openbox stuff.
+
+Package: openbox-gnome-session
+Architecture: all
+Version: 3.6.1-8+rpt3
+Priority: optional
+Section: x11
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 66
+Depends: openbox (>= 3.6.1-8+rpt3), gnome-session-bin, x11-utils
+Breaks: openbox (<< 3.5.2-5)
+Replaces: openbox (<< 3.5.2-5)
+Enhances: gnome-session
+Filename: ./openbox-gnome-session_3.6.1-8+rpt3_all.deb
+Size: 42372
+MD5sum: 7c26eb1e04eefef4488aa2d83d70f843
+SHA1: 16b7fbcff8915bff92a29028288e122c6cdfc16a
+SHA256: 2bb8d9f01c0962c01c54488d107d9baeadd1b2d3abf9b35614d5a5a7fcde8687
+SHA512: 6f79105a7c87f26855c5e663065fce8a8456393c8b549d58fa27e98dcfcd5506f41d55116bdc1dfeb22983db9802e6dba3488e998a359301f8664068dffea412
+Homepage: http://www.openbox.org
+Description: command line utility to run Openbox as GNOME session
+ openbox-gnome-session can provide GNOME session with openbox as
+ a default window manager. It can replace the original window manager
+ in GNOME Shell and GNOME Fallback sessions.
+
+Package: openbox-kde-session
+Architecture: all
+Version: 3.6.1-8+rpt3
+Priority: optional
+Section: x11
+Source: openbox
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 59
+Depends: openbox (>= 3.6.1-8+rpt3), x11-utils, plasma-workspace
+Breaks: openbox (<< 3.5.2-5)
+Replaces: openbox (<< 3.5.2-5)
+Enhances: kde-workspace
+Filename: ./openbox-kde-session_3.6.1-8+rpt3_all.deb
+Size: 41868
+MD5sum: 0be6e4be44bf6e995b7ac05427877284
+SHA1: e02bda3024ba3baac3df1b86e3ecb24bfeb8a5ec
+SHA256: 135d6f5d13f11063d5dfc6fd365502ae2d2208684336dad202775b85b929f792
+SHA512: 25ba14c1b7ce6d46bcfcfaab88f0428df18fd545dce39e33e80da539aee4c10091465d7ff5da00882fa06d942040f510d452b1d5682c8cfd6155bf72232a8cfa
+Homepage: http://www.openbox.org
+Description: command line utility to run Openbox as KDE SC session
+ openbox-kde-session can provide KDE SC session with openbox as
+ a default window manager. Can replace the original window manager
+ called KWin.
+
+Package: openbox
+Architecture: arm64
+Version: 3.6.1-8+rpt3
+Priority: optional
+Section: x11
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Installed-Size: 1258
+Provides: x-session-manager, x-window-manager
+Depends: libc6 (>= 2.17), libglib2.0-0 (>= 2.35.9), libice6 (>= 1:1.0.0), libobrender32v5 (>= 3.6.1-8+rpt3), libobt2v5 (>= 3.6.0), libsm6, libstartup-notification0 (>= 0.7), libx11-6, libxau6, libxcursor1 (>> 1.1.2), libxext6, libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2
+Recommends: obconf | obconf-qt, obsession, scrot
+Suggests: fonts-dejavu, libxml2-dev, tint2, python, openbox-gnome-session (= 3.6.1-8+rpt3), openbox-kde-session (= 3.6.1-8+rpt3)
+Breaks: openbox-theme-breeze (<< 1.0)
+Filename: ./openbox_3.6.1-8+rpt3_arm64.deb
+Size: 301832
+MD5sum: eee7283b2a7fc1956a2b9142accd74e2
+SHA1: d2e85b47d021bda6c174ed9d0e2efd9562674115
+SHA256: 3a49d6afb9ce64c781f03417570507e9642bde8cd6fcfb450497a5ae7560e7e0
+SHA512: 7fe25088f7bdfb36e3dab11021966cb9cb70785e1e6661695eb75a9a48a5b13def71241f7311ccc91c9f979bd222a416f9e7d9e826eb109c0d836c93dab2dff1
+Homepage: http://www.openbox.org
+Description: standards-compliant, fast, light-weight and extensible window manager
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ Some of the things to look for in Openbox are:
+ .
+  * ICCCM and EWMH compliance!
+  * Very fast
+  * Chainable key bindings
+  * Customizable mouse actions
+  * Window resistance
+  * Multi-head Xinerama support!
+  * Pipe menus
+
+Package: pi-bluetooth
+Architecture: arm64
+Version: 0.1.9
+Priority: optional
+Section: misc
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 25
+Depends: bluez, bluez-firmware, raspberrypi-sys-mods
+Filename: ./pi-bluetooth_0.1.9_arm64.deb
+Size: 4524
+MD5sum: 2fe4b1305ee127d4c161548a3e71f4c4
+SHA1: 80b6048b0ed3bc715c63584365310dabcf4b23f8
+SHA256: 5b7fbc5923a1c68107d8237f1f78317c2df9850fd537e634ae664a48f5085adf
+SHA512: 8ecec3dc37271f60cef0290b6ec2cd47194a9718d6d8cac9b7bfa394fc2bd6f9780e710af8fd21072115b55f61c3d32cf4bd0c77ae2fa17f980fc2baa7c4a958
+Homepage: https://github.com/RPi-Distro/pi-bluetooth
+Description: Raspberry Pi 3 bluetooth
+ Loads BCM43430A1 firmware on boot
+
+Package: pi-greeter-dbgsym
+Architecture: arm64
+Version: 0.11
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: pi-greeter
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 85
+Depends: pi-greeter (= 0.11)
+Filename: ./pi-greeter-dbgsym_0.11_arm64.deb
+Size: 60752
+MD5sum: dc5c201addba03454aa6dfbaed16e29e
+SHA1: 7599fce5d7bd34a2920ee968360234b89bb062b0
+SHA256: 8a91a07e283ab731dda1f406b00803d09c1584dd62e1771ebae9e6dc40f19c48
+SHA512: 14219a7607b62f21c4ff7439e5713a01c918f5fe108c769966c515e7a6f73755e7d263be8137f3de5201e9bfccbd7d02b6d9fad09cbc90ad75b3e897d417fd9c
+Description: debug symbols for pi-greeter
+Build-Ids: 64310b60845f4d41b40b6fc6ddab54b6359bb3c5
+
+Package: pi-greeter
+Architecture: arm64
+Version: 0.11
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 384
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.30.0), libgtk2.0-0 (>= 2.24.0), liblightdm-gobject-1-0 (>= 1.8.7), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libx11-6
+Recommends: desktop-base, gnome-themes-standard, gnome-icon-theme-symbolic, policykit-1
+Filename: ./pi-greeter_0.11_arm64.deb
+Size: 41156
+MD5sum: 940008e0def1c50dd86bab9e9ef0c9b0
+SHA1: d3379ba754912d8d9d19c60e5929121526e86d63
+SHA256: d4b5b0a2b5bd54bb034de0e634be1bc95ffcd9c9df6ee8b0683971a1e0dc708a
+SHA512: 9702d34e6cfd5228556b18d8010079a9ba6b0ecc716c2f31150e1e83a1e42a4cc0cc5261adb7715655fb284fe57cfea924777f9e57a0ed1be122849321df7978
+Homepage: http://raspberrypi.org/
+Description: GTK greeter for Raspberry Pi
+ A simple GTK-based greeter for the Raspbian LXDE desktop.
+
+Package: pipanel-dbgsym
+Architecture: arm64
+Version: 20190708~110948
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: pipanel
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 68
+Depends: pipanel (= 20190708~110948)
+Filename: ./pipanel-dbgsym_20190708~110948_arm64.deb
+Size: 49220
+MD5sum: 3de85d06211def2c70b8c60e161fe115
+SHA1: 56c3466e980687aa351e73385ff8dac1f368b7ca
+SHA256: d8586b6c04a9e59472f30374a15e423afcb1aad49b3c5ada7810f3c6a3a6b824
+SHA512: 5deb07efb322942ecc6d2976cb66401503d7e725dc41fb3fbf11cd976f09424aacee6d2ff52b22b1afda5e0121b07d9bbb392538c7caee42e3d592d237f74493
+Description: debug symbols for pipanel
+Build-Ids: e565e4bf0a31330ebf2c15e4304a69d96255fd7b
+
+Package: pipanel
+Architecture: arm64
+Version: 20190708~110948
+Priority: optional
+Section: x11
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 139
+Depends: libc6 (>= 2.17), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.12.0), libpango-1.0-0 (>= 1.14.0), libxml2 (>= 2.7.4), openbox, lxsession, zenity
+Filename: ./pipanel_20190708~110948_arm64.deb
+Size: 23364
+MD5sum: b6b5d070df9ef3cb31fb61640f52bf60
+SHA1: 78be40000e1b076f23f4b32c64b97543ac6ded98
+SHA256: ce51b8c25ef94d9ea13a986fae852476350b71f8366aae441129e8a6ca70458d
+SHA512: e6234923abb0003c2fe6d2228c8572caf4956ad05e263af23ed2c16f316d2fd3ad82ccbc137b82f099b9489601a2460e19409ccfc323e3e4724417caaa5aed93
+Homepage: https://www.raspberrypi.org/
+Description: Settings panel for Raspberry Pi desktop appearance
+ pipanel is an application which allows the configuration of the LX Desktop
+ user interface from one convenient dialog.
+
+Package: pishutdown-dbgsym
+Architecture: arm64
+Version: 0.11
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: pishutdown
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 33
+Depends: pishutdown (= 0.11)
+Filename: ./pishutdown-dbgsym_0.11_arm64.deb
+Size: 17732
+MD5sum: b2d471557afab2a4a6d508afe1648aa6
+SHA1: c191f8e1181b282f55e9da6493defb66c4c409ba
+SHA256: 4b19ad49ec8fd7ba7311898a43f93e40b5019cfbe80b62e046f6f0e77c0de459
+SHA512: 3eb7095fc7352fe9b58ae0d9aaddb9314081b25eb30977aaa5ace13f183c2d822f3539d46f35f356c89c111a8ff074bb33c03961fedb24b0721b67ea7f660d45
+Description: debug symbols for pishutdown
+Build-Ids: 36f4a428bb1e133db4efe9b11ba00081ef99e1e8
+
+Package: pishutdown
+Architecture: arm64
+Version: 0.11
+Priority: optional
+Section: utils
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 38
+Depends: libc6 (>= 2.17), libgdk-pixbuf2.0-0 (>= 2.22.0), libgtk2.0-0 (>= 2.8.0)
+Filename: ./pishutdown_0.11_arm64.deb
+Size: 6816
+MD5sum: edefa93626785606b0129530727fee2f
+SHA1: a36579a3826e8500b53a23c5357dcc53e7f784b6
+SHA256: 904b4768f64cc3c13292d2e6bb7f1063ddf0a4cccd075697d707d20ef363305e
+SHA512: 15b3f48beb1785fda3c2eaa4a24aec3dee5d761c3610f18461e96aa8550d0be352e4d85a7db68e2bb8fd08585c9e5be9830f8bc7eaede381e522fddff9f9bd29
+Homepage: http://github.com/raspberrypi/pishutdown
+Description: Desktop shutdown helper for Raspberry Pi
+ Small application offering shutdown / reboot / logout options, run from the
+ shutdown option on the main menu.
+
+Package: pix-plym-splash
+Architecture: all
+Version: 0.21
+Priority: extra
+Section: oldlibs
+Source: rpd-plym-splash
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 8
+Depends: rpd-plym-splash
+Filename: ./pix-plym-splash_0.21_all.deb
+Size: 2448
+MD5sum: 9011b83e8ee43f05df2809b2e264c8d1
+SHA1: 72a4f779d675e17a1e11876710c7ca675cd00d3c
+SHA256: 3ddd2c04507db37ee57a1ce4859e75cdbbb12489ef629596d00026d61790f928
+SHA512: 6d7ca2d2e27c4cf0dbf439c6d7b658c100dc3688842e29a81ef148e33e34f1b2718e63aa18fa260bcf985ccfab81411d7919c47ca0c91c8e87da1db08af0e9ff
+Homepage: http://raspberrypi.org/
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: pixel-wallpaper
+Architecture: all
+Version: 0.4
+Priority: extra
+Section: oldlibs
+Source: rpd-wallpaper
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 9
+Depends: rpd-wallpaper
+Filename: ./pixel-wallpaper_0.4_all.deb
+Size: 2228
+MD5sum: 23ebacaba7673fd0d419571bfdb571db
+SHA1: 5c70e9cdcd749580b0a95fd7a08c32899e010113
+SHA256: 686d46364a7aebc32dfc1e639b263f07d55debda772eee57e82b020cca9ea6c5
+SHA512: 4be5c60e96cefccbe62031fe424cfd0b1a9c2118c8ef7ea639cd75c01b788e0c873e36fe7094e962bcb6af01a1a56d2a7b06597196d636477e47ebce5ac2526a
+Homepage: http://raspberrypi.org/
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: pixflat-icons
+Architecture: all
+Version: 0.2
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 5104
+Depends: libgtk2.0-bin
+Filename: ./pixflat-icons_0.2_all.deb
+Size: 1047632
+MD5sum: ec773210187a3e73ff655663703844d5
+SHA1: 8388ffec145c57fcf2715d85b5f84c718aad024f
+SHA256: 652518128a3ab848ac63c6e583eae35d48982d942ad396ee4d67321f32ab8a56
+SHA512: 969fc867e6ba053921c72ec969b5a526915cc5c27983d255024469f725681150d4d886e49ba4f292647e4c0941ab0ba1bb2c40dd5d6b10832bdc07c9b28d1493
+Homepage: http://raspberrypi.org/
+Description: Icons for Raspberry Pi Desktop
+ Custom icon set for the Raspberry Pi Desktop environment.
+
+Package: plymouth-dbgsym
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 377
+Depends: plymouth (= 0.9.4-1.1+rpt2)
+Breaks: plymouth-dbg (<< 0.9.2-4~)
+Replaces: plymouth-dbg (<< 0.9.2-4~)
+Filename: ./plymouth-dbgsym_0.9.4-1.1+rpt2_arm64.deb
+Size: 273428
+MD5sum: f91075a9d82120830de08a5a1602b975
+SHA1: b3029a867ef5246e63b97bb94b4d94b9354159d4
+SHA256: 75798dbd9f23050fc5e08d90c85bf0e7a3bafec47feb913c409ca0db62a279e8
+SHA512: 72d9839b318c936cf304e04ba7b12f24b630a97254f09c89c6346cec138df4b6a82022bc5f5b3cbd325c94ec5032c3ceef923c1ed547412eecf4d2c09e1083cf
+Description: debug symbols for plymouth
+Build-Ids: 33b4635d12914182f9e57297b1130262ebd3596e 4e4d67a5c307d345c1248d8adcec7dc82b0d6f33 733233d50fc393ae24567d99294a88013e4d57b7 8d16537f3a33bc34b3e97ca54356038f3c8d428b 8dc7141a442352530f922dae83b10144629f725e a0f45af74747cfb8094d1cbbd21068ab0b4da189 bab6caf2fb92e41f0ba0995553cd16280ca0aac1 d50df8363d177463bf9af54bc37680ca34844658
+
+Package: plymouth-label-dbgsym
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 28
+Depends: plymouth-label (= 0.9.4-1.1+rpt2)
+Breaks: plymouth-dbg (<< 0.9.2-4~)
+Replaces: plymouth-dbg (<< 0.9.2-4~)
+Filename: ./plymouth-label-dbgsym_0.9.4-1.1+rpt2_arm64.deb
+Size: 12792
+MD5sum: 3a5a55d2d213ce29e5933d69e0ac5195
+SHA1: 3403d2ef04f98f5a45f79f79cb51c3e8fba28932
+SHA256: a0f72290dd1117a05c6ba78e59987442f9ff8f1bd36de75c29828e0bab14f127
+SHA512: f650f2976197c9fba9f265f86f6c75a5e6300a895840e07403ac499781d617fa8d1e2b8a7cb3d5f79e8f3f0e1b56dbd1579a72369d4f6d65baa166512df334f2
+Description: debug symbols for plymouth-label
+Build-Ids: c9fb67ecf5258d59592847dae0d26969fb1a33df
+
+Package: plymouth-label
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Priority: optional
+Section: misc
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 35
+Depends: plymouth (= 0.9.4-1.1+rpt2), libc6 (>= 2.17), libcairo2 (>= 1.14.0), libglib2.0-0 (>= 2.12.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libplymouth4 (>= 0.9.3)
+Breaks: plymouth-themes (<< 0.9.2-5~)
+Replaces: plymouth-themes (<< 0.9.2-5~)
+Filename: ./plymouth-label_0.9.4-1.1+rpt2_arm64.deb
+Size: 16516
+MD5sum: 90045e527abdcb6a4f4f3c40812dfc61
+SHA1: 6fb704a89511b4dd085290e32fd91083b17903da
+SHA256: 0e2fb9d894ab762f0f5d28d158422f6143f2c95991ad45b8091b62158d3c8b94
+SHA512: cdc4e9ed75ee98f5bcf1016456bdf5db753418a3d4c74fa312c7da7029fb17806c8e303f42a4dd92dee5ae3cb2786d755bd6c17d92afff01cfd156fb82bc863d
+Homepage: http://www.freedesktop.org/wiki/Software/Plymouth
+Description: boot animation, logger and I/O multiplexer - label control
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package contains the label control, used by various graphical themes
+ to render text.
+
+Package: plymouth-themes-dbgsym
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 142
+Depends: plymouth-themes (= 0.9.4-1.1+rpt2)
+Breaks: plymouth-dbg (<< 0.9.2-4~)
+Replaces: plymouth-dbg (<< 0.9.2-4~)
+Filename: ./plymouth-themes-dbgsym_0.9.4-1.1+rpt2_arm64.deb
+Size: 93124
+MD5sum: 0655a72231c464c4bfb910ec1085f257
+SHA1: 88ccd73c68355ba4641128d086855f965bb76843
+SHA256: 16d2fbb662a45bfb599fcd48eb1a539ac195d382edf479835bef8152f8b1e345
+SHA512: e02c86972c8a6612158676f4fc2e17133638eb847a3a5addc418323f277001fa1814fe2de66cafc5d4495ddb056d911991d4dfd48d8b62cb1a6d81f4bf20f036
+Description: debug symbols for plymouth-themes
+Build-Ids: 1782d0fdb3e74876575f8e37316dad22eead9640 610fb82fa9a398b92f723f2f29aac88b973e9267 a24772aaac1795f5cd58e51526d136a31e40b4da aa3a8ec6f40cbe75e245227692228e0381ec0117
+
+Package: plymouth-themes
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Priority: optional
+Section: misc
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 934
+Provides: plymouth-theme, plymouth-themes-all, plymouth-themes-fade-in, plymouth-themes-glow, plymouth-themes-script, plymouth-themes-solar, plymouth-themes-spinfinity, plymouth-themes-spinner
+Depends: fontconfig, fontconfig-config, fonts-dejavu-core | ttf-dejavu-core, plymouth (= 0.9.4-1.1+rpt2), plymouth-label (= 0.9.4-1.1+rpt2), libc6 (>= 2.17), libplymouth4 (>= 0.9.2)
+Conflicts: plymouth-themes-all, plymouth-themes-fade-in, plymouth-themes-glow, plymouth-themes-script, plymouth-themes-solar, plymouth-themes-spinfinity, plymouth-themes-spinner
+Breaks: libfontconfig1 (<< 2.13.0-5~), plymouth-drm (<< 0.9.0-6~)
+Replaces: plymouth-drm (<< 0.9.0-6~), plymouth-themes-all, plymouth-themes-fade-in, plymouth-themes-glow, plymouth-themes-script, plymouth-themes-solar, plymouth-themes-spinfinity, plymouth-themes-spinner
+Filename: ./plymouth-themes_0.9.4-1.1+rpt2_arm64.deb
+Size: 736684
+MD5sum: ca8ae572bd5c4943dc12743be669676d
+SHA1: b29255464cea4cc34fc311ff852c33fd2a8db763
+SHA256: e814137953ae357fa42d4a2de22f542db3229c14b60bd1ff75bea4d0a6132823
+SHA512: 806538fcf3d11a7e5b11da62a218f0bda1e9edfab97ad01d4a5e262517ce9a4b5c8241d0756583d09acc30a14b112be42f6dcdd18a59818bc3cc6e3a1e8c8a9a
+Homepage: http://www.freedesktop.org/wiki/Software/Plymouth
+Description: boot animation, logger and I/O multiplexer - themes
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package provides the following themes:
+ .
+  * fade-in: features a centered logo that fades in and out while stars twinkle
+    around the logo during system boot up.
+  * glow: features a pie chart as progress indicator.
+  * script: features a simple base theme.
+  * solar: features a blue flamed sun with animated solar flares.
+  * spinfinity: features a centered logo and animated spinner that spins in the
+    shape of an infinity sign.
+  * spinner: features a simple theme with a small spinner on a dark background.
+
+Package: plymouth-x11-dbgsym
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 40
+Depends: plymouth-x11 (= 0.9.4-1.1+rpt2)
+Breaks: plymouth-dbg (<< 0.9.2-4~)
+Replaces: plymouth-dbg (<< 0.9.2-4~)
+Filename: ./plymouth-x11-dbgsym_0.9.4-1.1+rpt2_arm64.deb
+Size: 23104
+MD5sum: f27fc8aec169b18084119b01e57b1864
+SHA1: 29f1e131c12fcd194449d61c2606a7eb556b474d
+SHA256: 5d22edc8daea7d2099de7446390a135eaefa964d3e0d5a0f473e51c604e96065
+SHA512: c439d600cbd053c1acbefd7cc9f5ff78946a9322c5b0d4f2c95f5d5b5da902ec2a274c8255b3d5dd25b85d811bb21d51f060b5f924607fbb0f6decb52babb7f3
+Description: debug symbols for plymouth-x11
+Build-Ids: d2767146b1a7280a4c930b1793494225002377e3
+
+Package: plymouth-x11
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Priority: optional
+Section: misc
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 46
+Depends: plymouth (= 0.9.4-1.1+rpt2), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.12.0), libgtk-3-0 (>= 3.14.0), libplymouth4 (>= 0.9.3)
+Recommends: plymouth-themes
+Suggests: gdm
+Filename: ./plymouth-x11_0.9.4-1.1+rpt2_arm64.deb
+Size: 18300
+MD5sum: 70519c903ec2d23b72317cb007aab07d
+SHA1: 06cc235fa77418be998b1dc8abc2de262701cc18
+SHA256: a1f3ac0a97908bc0f26c23205018e4974801ae19388fe69d2121d2cce26f52ea
+SHA512: cff679c0a07cad45c5c1c3038394012d8cf8d5a660f1f909956166a1dace2f08a6da526d478bc6f529841129dd8bc2df9bea052aa0b0729ef947b9f9a9ca16a2
+Homepage: http://www.freedesktop.org/wiki/Software/Plymouth
+Description: boot animation, logger and I/O multiplexer - X11 renderer
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package contains the X11 renderer for a graphical boot splash.
+
+Package: plymouth
+Architecture: arm64
+Version: 0.9.4-1.1+rpt2
+Priority: optional
+Section: misc
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 452
+Depends: init-system-helpers (>= 1.18), initramfs-tools | dracut, lsb-base (>= 3.0-6), systemd (>= 232-8~), udev (>= 232-8~), libc6 (>= 2.17), libdrm2 (>= 2.4.47), libplymouth4 (>= 0.9.4)
+Suggests: desktop-base, plymouth-themes
+Conflicts: console-common
+Breaks: plymouth-drm (<< 0.9.0-6~), plymouth-themes (<< 0.9.0-8~)
+Replaces: plymouth-drm (<< 0.9.0-6~), plymouth-themes (<< 0.9.0-8~)
+Filename: ./plymouth_0.9.4-1.1+rpt2_arm64.deb
+Size: 113176
+MD5sum: cd24d2abe3aad5ad0a26338868c54399
+SHA1: fb0d5b7e5f4b525a7cde9a2ebcad2196892397b7
+SHA256: 021e26567bf9b9e4b097a8f4d69d3004b28a6a9942b5061ca5c5b5f4b08d91b6
+SHA512: 9b3f54c1762de443f49dcae33d7053e2ced7902053f075ae0c0dd4b889e2873b26358cd566bb9860d8823b544f93151cb18322f67727beb7e1301d6fa213154b
+Homepage: http://www.freedesktop.org/wiki/Software/Plymouth
+Description: boot animation, logger and I/O multiplexer
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package provides the basic framework, enabling a text-mode animation.
+
+Package: raspberrypi-artwork
+Architecture: all
+Version: 20150921
+Priority: extra
+Section: x11
+Maintainer: Alex Bradbury <asb@asbradbury.org>
+Installed-Size: 89
+Filename: ./raspberrypi-artwork_20150921_all.deb
+Size: 75236
+MD5sum: 468b855cc582a5db70467f152c4aa119
+SHA1: b9802b95e1c03cbf4029663ab09298c18c8951f1
+SHA256: c1b51cffd6ee14db9f9bbd5e1d93725f038289191575eed842431d744b334f12
+SHA512: 9b1185c2fca696721c63703918a64004f2a74159e10578db52d52a61a95f1816babc592a12cbb136c07c313edabd17f5a1c7a4a57dc79219569e7509d88473f1
+Homepage: https://github.com/asb/raspberrypi-artwork
+Description: Copy of the Raspberry Pi logo
+
+Package: raspberrypi-net-mods
+Architecture: all
+Version: 1.3.0
+Priority: optional
+Section: net
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 21
+Depends: dhcpcd5 (>= 6.10.1-1+rpi2)
+Filename: ./raspberrypi-net-mods_1.3.0_all.deb
+Size: 3784
+MD5sum: a285a0faa1a2440756c7072ec4f85a08
+SHA1: 4d87256d85169fa6904ba5af57500909798d23e5
+SHA256: 727e8b2d93d6153851bee17ff28f85984c2dfa5c3f8a0a7d86cadadac9e497b7
+SHA512: 81b74620acc97a2533a9f377d5e3750772cde348d476eac8533bbdfc43b2ed4e37bb2b245050e5c1c0f0e024c048eeb9d5bc11590165c86da2de756d66d2ca63
+Description: Network configuration for the Raspberry Pi UI
+
+Package: raspberrypi-sys-mods
+Architecture: arm64
+Version: 20191105
+Priority: optional
+Section: admin
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 68
+Depends: libcap2-bin, systemd (>= 230), gettext-base
+Recommends: rfkill, rpi-eeprom
+Filename: ./raspberrypi-sys-mods_20191105_arm64.deb
+Size: 10384
+MD5sum: 1056317d671ddb142e86064d74e7ced3
+SHA1: d0d4428e731d7f159f5307fe7eda7a503428789a
+SHA256: f8d78cd0330ee241b2e4068b9e6a5cbfaf9da674a3e9c335b6c31ad2cd6a5f3e
+SHA512: 13b8bdcdf16ecba13a05ab97bb521b602ed76b2d498f8dac52a18691ae51fce8544407ad18d350bb51ff70881455d77e108ab8dc33a34b324958bf77bc80d2d4
+Homepage: https://github.com/RPi-Distro/raspberrypi-sys-mods
+Description: System tweaks for the Raspberry Pi
+ Various modifications to improve the performance or user experience.
+
+Package: raspberrypi-ui-mods
+Architecture: all
+Version: 1.20200127
+Priority: extra
+Section: x11
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 1825
+Depends: lxpanel, pcmanfm, openbox, xserver-xorg, x11-xserver-utils, policykit-1, lightdm, raspberrypi-sys-mods, zenity, libglib2.0-bin, desktop-file-utils, lxsession
+Recommends: xserver-xorg-video-fbturbo, fonts-piboto (>= 1.1), pipanel, lxinput, raspberrypi-artwork, pi-greeter, rpd-plym-splash, rpd-wallpaper, pishutdown, scrot, gtk2-engines-pixbuf, gtk2-engines-clearlookspix, gnome-icon-theme, pixflat-icons, lxplug-volume, lxplug-network, lxplug-bluetooth, lxplug-ejecter, lxplug-ptbatt, rc-gui (>= 1.18), gtk2-engines-pixflat, lxplug-cputemp
+Filename: ./raspberrypi-ui-mods_1.20200127_all.deb
+Size: 321804
+MD5sum: 80e024c77441bd5f1ae9c1d08e126bf1
+SHA1: 5efbbb9cea4efeb63061159e16f40785ae8da4f1
+SHA256: 7d2dc369e7c7480f8cec6654bab421146e9b7697456ff06b2c7edf6196666805
+SHA512: 5776c2e8ed5dd42dae18bc08e7dee043bc41199c4032197b3c2d5a2048cb02a0df30c3462235c396b3169dc0c6f837cfca1b9e82deb21f5b6c84dfd46cc2d8fa
+Description: Config to customise the LXDE UI for the Raspberry Pi
+ Customised theme and configuration for LXDE desktop on Raspberry Pi.
+
+Package: raspi-config
+Architecture: all
+Version: 20200203
+Priority: optional
+Section: utils
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 107
+Depends: whiptail, parted, lua5.1, alsa-utils, psmisc, initramfs-tools
+Recommends: triggerhappy, iw
+Filename: ./raspi-config_20200203_all.deb
+Size: 25112
+MD5sum: b666e5ab38e0f6a53803b0c38b66700f
+SHA1: bb1e8233c9eee69d30c1bb6f167628109e7e61fb
+SHA256: 079488f4bf9ba984d75335fe5b2e852555aface5d83a33d56200823ae64ba344
+SHA512: 12a044437688afd8b8e5e13e4ba1506ac3491e288a2616bdd08b502972159dc850eee87f202be6c5ebbeba1c0b862edea744d3b47630c9992d3db1c1c2203ff1
+Description: Raspberry Pi configuration tool
+ A simple configuration tool for common Raspberry Pi administrative tasks
+
+Package: raspi-gpio-dbgsym
+Architecture: arm64
+Version: 0.20191001
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: raspi-gpio
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 33
+Depends: raspi-gpio (= 0.20191001)
+Filename: ./raspi-gpio-dbgsym_0.20191001_arm64.deb
+Size: 17160
+MD5sum: fbe88938f8a7a3087056391a08967a3a
+SHA1: 1f296ea4ad6bd51139b46637c41dbdffa1fee1e5
+SHA256: 7edfd66246a0229e278f80d19c0a7c41e064d2f802b714b6d0df3c1fb49e6248
+SHA512: 18a3aae5275ac7a975234e3d388e24b842bb4ee6e8ec0f212e7b8caa1bbfe34af28259d9abc4add27cda2a0804e937ba114e74684c06a18dd02811664eca81d9
+Description: debug symbols for raspi-gpio
+Build-Ids: 8120c9f0bd9be3e165ec94de06ddfd425524147b
+
+Package: raspi-gpio
+Architecture: arm64
+Version: 0.20191001
+Priority: optional
+Section: utils
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 51
+Depends: libc6 (>= 2.17)
+Filename: ./raspi-gpio_0.20191001_arm64.deb
+Size: 12576
+MD5sum: f0b1fd63df5360495365541a0e6d5d4c
+SHA1: 766e26c1a4f78f447796e6c7f670e94d030da58c
+SHA256: f20db238c826774c87eb3773fe5e21d73b32d810b28c79c5cfa5db7054db3868
+SHA512: a4a10218aaeaa11140ad0d909cea73bfe68537aae049b1ce51d40057b1eb6af851dfeb4669ec9ed555b5a1d7d70a17935eb0f068771beeaf67830db16016b8b7
+Homepage: https://www.raspberrypi.org/
+Description: Dump the state of the BCM270x GPIOs
+ This tool prints out one line per BCM270x GPIO pin giving the current value
+ on the pin, and the function it is currently set to in the GPFSELx registers.
+
+Package: rc-gui-dbgsym
+Architecture: arm64
+Version: 1.34
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: rc-gui
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 55
+Depends: rc-gui (= 1.34)
+Filename: ./rc-gui-dbgsym_1.34_arm64.deb
+Size: 36552
+MD5sum: c8a28edec11dca708204bf9c2a594e23
+SHA1: 83396b4f518b69988fd3d7a19ad6e1543aa3aa8f
+SHA256: 35e041ac7be5917cd855988bbe1aa92b69751674837d8e89fb0f0db318abb2f2
+SHA512: 42ac6dab370ae7725e4621cd7d2daf378f183293562677610c144e463be5b4373f04f3874f75dc0260a9686d1be0453cbd4c512adb480d662a32a318f757b69d
+Description: debug symbols for rc-gui
+Build-Ids: 9628cb1dec57176c5a5030b9407852bcfb7cd1a4
+
+Package: rc-gui
+Architecture: arm64
+Version: 1.34
+Priority: optional
+Section: admin
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 371
+Depends: libc6 (>= 2.17), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.12.0), raspi-config, zenity
+Filename: ./rc-gui_1.34_arm64.deb
+Size: 43400
+MD5sum: 1bb4aeba019dc4a82beaed661319f6b8
+SHA1: f67aa022ac7593309346fc65ad031aed685649e5
+SHA256: 5bff6318f0dddc32bab2e7e2079f9d639f09e6002382cc6d03d8e46019d04929
+SHA512: 6d0abf1f03a59ec56c19fd030b6479be7eab9b047781d53742789525a05437c173b08c917d01b770f8a424513d3100e9df162f16878bfe7041fec57ae58adf1b
+Homepage: https://github.com/raspberrypi-ui/rc_gui
+Description: raspi-config GUI
+ Application which allows the configuration of Raspberry Pi system settings
+
+Package: rpd-plym-splash
+Architecture: arm64
+Version: 0.21
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 51
+Depends: plymouth (>= 0.9.2), plymouth-themes (>= 0.9.2)
+Breaks: pix-plym-splash (<< 0.10-1~)
+Replaces: pix-plym-splash (<< 0.10-1~)
+Filename: ./rpd-plym-splash_0.21_arm64.deb
+Size: 31996
+MD5sum: 9cd420a89a299b4b3eddefbf04c44f20
+SHA1: de44e154e920deaaac56bf5f8ed1e511a7edefe6
+SHA256: 90d06707a71bf0777c4e237f4fa245a65fa3fcd8ec2b82b18476d7381b31f7db
+SHA512: 14c06517c6db2e42204c1ffb1f59ce216d1007164e4160e0f6c1725a395f984e27bbb71ff1db7e9791e572b36d2fa6da87fedca63052a3566f02bf65cad9e74b
+Homepage: http://raspberrypi.org/
+Description: Raspberry Pi Desktop splashscreen
+ Plymouth theme with Raspberry Pi Desktop splashscreen
+
+Package: rpd-wallpaper
+Architecture: all
+Version: 0.4
+Priority: optional
+Section: x11
+Maintainer: Simon Long <simon@raspberrypi.org>
+Installed-Size: 27453
+Breaks: pixel-wallpaper (<< 0.3-1~)
+Replaces: pixel-wallpaper (<< 0.3-1~)
+Filename: ./rpd-wallpaper_0.4_all.deb
+Size: 27600852
+MD5sum: 8cef790d5378fa80d9f5b79dadce883a
+SHA1: 6a7662ea64e204312787ce5353fb735d92d4dbc9
+SHA256: 54b2423b0fa79778ebcace92fce2fd85c4db44747e682c65c81f991cbaeadcce
+SHA512: 104d06819ffad034ec7452bba3911a6a42765f4d5999fac1071460fa47bd2f9978fda0fdde3818e9d0771ed7adb9764f1c20b80d33cf239c5811620b3549266d
+Homepage: http://raspberrypi.org/
+Description: Wallpaper for Raspberry Pi Desktop
+ Custom wallpaper graphic files for Raspberry Pi Desktop environment.
+
+Package: x11-common
+Architecture: all
+Version: 1:7.7+16
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: xorg
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 304
+Depends: lsb-base (>= 1.3-9ubuntu2)
+Filename: ./x11-common_7.7+16_all.deb
+Size: 251080
+MD5sum: 6c27b0e0debf7b6fae24b91a0d641528
+SHA1: 20a2298279026d31151eb534df8e7cc50331aa59
+SHA256: 103b07347ee5f401ce4052af57313a29a53bbb5433640842a8779382c7f9aba6
+SHA512: 547556c8996a91c6dc4632b489c134cd326d41e161101eb3ace37c72d5dae45fbca3f9e3d4a59af9147283195ea3ee8d834a8e996f27c97234280ef8833b1a5b
+Homepage: http://www.x.org/
+Description: X Window System (X.Org) infrastructure
+ x11-common contains the filesystem infrastructure required for further
+ installation of the X Window System in any configuration; it does not
+ provide a full installation of clients, servers, libraries, and utilities
+ required to run the X Window System.
+ .
+ A number of terms are used to refer to the X Window System, including "X",
+ "X Version 11", "X11", "X11R6", and "X11R7".  The version of X used in
+ Debian is derived from the version released by the X.Org Foundation, and
+ is thus often also referred to as "X.Org".  All of the preceding quoted
+ terms are functionally interchangeable in an Debian system.
+
+Package: xbase-clients
+Architecture: all
+Version: 1:7.7+16
+Priority: optional
+Section: x11
+Source: xorg
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 45
+Depends: x11-apps, x11-session-utils, x11-utils, x11-xkb-utils, x11-xserver-utils, xauth, xinit
+Suggests: x11-xfs-utils
+Filename: ./xbase-clients_7.7+16_all.deb
+Size: 37948
+MD5sum: 707d4c9fdd33297ffa42f26b3f3c59cc
+SHA1: 8bdd72e5f380604ac983b1b52fa8bb25e0118533
+SHA256: 22efb9cd4fa1f978040d1982f434ae924ea17b3d575369c15d2ff18168cfaacb
+SHA512: 6059ac4ca2a1d001d9c1abddfb915f64ef45a4dc446d93f4a4d766a7817752037082bd6849a2aab76b183ccd30c8ab3a0e0fd99196a3d6814e1d9dab17c03906
+Homepage: http://www.x.org/
+Description: miscellaneous X clients - metapackage
+ An X client is a program that interfaces with an X server (almost always via
+ the X libraries), and thus with some input and output hardware like a
+ graphics card, monitor, keyboard, and pointing device (such as a mouse).
+ .
+ This package provides a miscellaneous assortment of several dozen X clients
+ that ship with the X Window System.
+ .
+ This package is provided for transition from earlier Debian releases, the
+ programs formerly in xutils and xbase-clients having been split out in smaller
+ packages.
+
+Package: xdmx-dbgsym
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 5996
+Depends: xdmx (= 2:1.20.4-1+rpt1)
+Filename: ./xdmx-dbgsym_1.20.4-1+rpt1_arm64.deb
+Size: 5787764
+MD5sum: 991120967faaa50b35b5fc102c244cf1
+SHA1: 30f1d364f5ec1889aeb66dbb3205416fc232ab1d
+SHA256: b4141a913ebcbefd48f2046950f6e0cf74f912a1902b529b15af58829a7b1fd1
+SHA512: 01f0b4071b9ee9ffce2d446d2e7d3b1db1ef75c054afbde5b9ed2c3990b62df8f2fe602c7c53f194a49d2c814d63ab1a3fe10f329d2cc4374b75d3457bc88f25
+Description: debug symbols for xdmx
+Build-Ids: 81e04f664fae43119cea52c4b98da614f84cab9d
+
+Package: xdmx-tools-dbgsym
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 342
+Depends: xdmx-tools (= 2:1.20.4-1+rpt1)
+Filename: ./xdmx-tools-dbgsym_1.20.4-1+rpt1_arm64.deb
+Size: 233736
+MD5sum: 3f66106e4190b01df022a7f38aa7633e
+SHA1: 572fdfec99cb7900ad0e357d05274a8671c63784
+SHA256: b712abce5081cc2395894899384938444ee7c27459b52345ea7339fe0a8e93d1
+SHA512: d4c5f269245b576ccdb33f0f014e48b2b514d5e89a6a3664765ab574aafb621e71811b1c379f8a3690c95a11b22dc055fcf84dc25f62d950da707f27764d55f6
+Description: debug symbols for xdmx-tools
+Build-Ids: 0a79c916ea6f4a696ede5bcfa95147db6edbc687 0fadcbba11821c37400f14244001775c6d86b619 1225c3ff9e787c67133d58e2d16180065f8bdc48 1753dfff6b97faee81f92aee15779f00e0f6d180 553836f01a15e5776c6f5350cd4e1247be91c60b 5c71248eef3b3d876e56639485642234cc239a84 644e9fc343b1cd01202a3ebdd27d8bc21b7bb855 6f3128887b21463838272ad18f12d11f942d2ba1 704fdd5265b2cf5bf5d9c65f02a133029172b988 c24ae9016f29dd2035a68462d06f17734e46c17b e033b9f259a200289f58a4c820843e7b993b747f
+
+Package: xdmx-tools
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2486
+Depends: xdmx, libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.0), libc6 (>= 2.17), libdmx1, libx11-6, libxaw7, libxext6, libxmu6, libxpm4, libxt6
+Filename: ./xdmx-tools_1.20.4-1+rpt1_arm64.deb
+Size: 2262584
+MD5sum: 741b4ba0a2ef2fb7b0fd049b906566a9
+SHA1: a73eca7f51114cde2ca0ccafde99b19663fe00ba
+SHA256: 237b8d27a09f844910972ab04a2aae7d299a265c8843002a795c35fc641a6341
+SHA512: bcf5d68f41b4391523113221e7d639e2b09343383798216b2b9019a91842f34d9ca4bd690f3d578c85dae99a2ef2a2f453d4384bf0e98121666509204c37fa51
+Homepage: https://www.x.org/
+Description: Distributed Multihead X tools
+ This package provides a collection of tools used for administration of
+ the Xdmx server; see the xdmx package for more information.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xdmx
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 4107
+Depends: xserver-common (>= 2:1.20.4-1+rpt1), libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.7.0), libc6 (>= 2.17), libgcrypt20 (>= 1.8.0), libpixman-1-0 (>= 0.30.0), libselinux1 (>= 2.0.82), libsystemd0, libunwind8, libx11-6 (>= 2:1.6.0), libxau6, libxdmcp6, libxext6, libxfixes3, libxfont2 (>= 1:2.0.1), libxi6, libxmuu1, libxrender1, libxshmfence1
+Filename: ./xdmx_1.20.4-1+rpt1_arm64.deb
+Size: 2914604
+MD5sum: 90eb46f7fd59c8a59e156ef53a093f0c
+SHA1: 21e660d9c8518b786a5d5d651ef19a1e6606efc2
+SHA256: f697665b9f31e8fde9ff05cdf7cb659c721585924fc322e4f04e3a93eb8cbeb8
+SHA512: 6bd97b174a88c73f562fba4dbb4ffd62ebfd35041906ee7abce6a3a45e61e12bf9cfc05cd8923329739c5bd9466172e01661c77062daa18c696bfde00d5efac0
+Homepage: https://www.x.org/
+Description: distributed multihead X server
+ Xdmx is a proxy X server that uses one or more other X servers as its
+ display device(s). It provides multi-head X functionality for displays that
+ might be located on different machines. Xdmx functions as a front-end X server
+ that acts as a proxy to a set of back-end X servers. All of the visible
+ rendering is passed to the back-end X servers. Clients connect to the Xdmx
+ front-end, and everything appears as it would in a regular multi-head
+ configuration. If Xinerama is enabled (e.g., with +xinerama on the command
+ line), the clients see a single large screen.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xnest-dbgsym
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 4556
+Depends: xnest (= 2:1.20.4-1+rpt1)
+Filename: ./xnest-dbgsym_1.20.4-1+rpt1_arm64.deb
+Size: 4353772
+MD5sum: f309f34640cee73b0d3d979a3e3df211
+SHA1: c9430ed4a8b2a2c6ba36b693411968eb87aae6d2
+SHA256: c137b88899ae04025b8d16a5931e1a381493f714a9dc8c6ef69486ea369b5a05
+SHA512: 8dc295aab9feaa0ad3b7aef143524e703c5a95fa205d43af4e6139a14146e72e5de2451e5b20f0694a434452284d444105c8c435fb424cfde24fc1d0fcb8ccc5
+Description: debug symbols for xnest
+Build-Ids: bb9a5f1a6c7c86a76c4fc89717f00701348d32d0
+
+Package: xnest
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 3850
+Provides: xserver
+Depends: xserver-common (>= 2:1.20.4-1+rpt1), libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.7.0), libc6 (>= 2.17), libgcrypt20 (>= 1.8.0), libgl1, libpixman-1-0 (>= 0.13.2), libselinux1 (>= 2.0.82), libsystemd0, libunwind8, libx11-6, libxau6, libxdmcp6, libxext6, libxfont2 (>= 1:2.0.1), libxshmfence1
+Recommends: libgl1-mesa-dri (>= 7.1~rc1)
+Filename: ./xnest_1.20.4-1+rpt1_arm64.deb
+Size: 2815252
+MD5sum: a232e9999dec20c33f83ca514e8dddff
+SHA1: 1e4ebab90c4af8aab068edd09f71f2cac853d9d9
+SHA256: 104d95f6243a7d0b342ab3d6369dab6a5763190e337f07bdcf80a966a9f1fbe1
+SHA512: 5c39aed2241f346b0f2cb0ff35594b925fb9d53ede74074ac2b11400168115df1cab46bd2c27a05333810666f44eaea385cb2b6c5bffe3db2a2a3c7d7c23f947
+Homepage: https://www.x.org/
+Description: Nested X server
+ Xnest is a nested X server that simply relays all its requests to another
+ X server, where it runs as a client.  This means that it appears as another
+ window in your current X session.  Xnest relies upon its parent X server
+ for font services.
+ .
+ Use of the Xephyr X server instead of Xnest is recommended.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xorg-dev
+Architecture: all
+Version: 1:7.7+16
+Priority: optional
+Section: x11
+Source: xorg
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 45
+Depends: libdmx-dev, libfontenc-dev, libfs-dev, libice-dev, libsm-dev, libx11-dev, libxau-dev, libxaw7-dev, libxcomposite-dev, libxcursor-dev, libxdamage-dev, libxdmcp-dev, libxext-dev, libxfixes-dev, libxfont-dev, libxft-dev, libxi-dev, libxinerama-dev, libxkbfile-dev, libxmu-dev, libxmuu-dev, libxpm-dev, libxrandr-dev, libxrender-dev, libxres-dev, libxss-dev, libxt-dev, libxtst-dev, libxv-dev, libxvmc-dev, libxxf86dga-dev, libxxf86vm-dev, x11proto-bigreqs-dev, x11proto-composite-dev, x11proto-core-dev, x11proto-damage-dev, x11proto-dmx-dev, x11proto-fixes-dev, x11proto-fonts-dev, x11proto-gl-dev, x11proto-input-dev, x11proto-kb-dev, x11proto-randr-dev, x11proto-record-dev, x11proto-render-dev, x11proto-resource-dev, x11proto-scrnsaver-dev, x11proto-video-dev, x11proto-xcmisc-dev, x11proto-xext-dev, x11proto-xf86bigfont-dev, x11proto-xf86dga-dev, x11proto-xf86dri-dev, x11proto-xf86vidmode-dev, x11proto-xinerama-dev, xserver-xorg-dev, xtrans-dev
+Filename: ./xorg-dev_7.7+16_all.deb
+Size: 38068
+MD5sum: e1848500e41ea86d66a2e6563951742f
+SHA1: ed3f31bed7f5d6d17e2d4e6f7f565f2db5eee01a
+SHA256: bdc7c812d7b7ecf986909cf349bcf8b6691e13d302c7f2f048f030b659553e17
+SHA512: e4f0f041f9acc021a92650dc63d111c118579205ccba295f072aa1e57808a8abf4697dbf35690f87680f6c40e7c8ff50a0054def2b093d8da403bfea369491e9
+Homepage: http://www.x.org/
+Description: X.Org X Window System development libraries
+ This metapackage provides the development libraries for the X.Org X Window
+ System.
+ .
+ X Window System design documentation, manual pages, library reference
+ works, static versions of the shared libraries, and C header files are
+ supplied by the packages depended on by this metapackage.
+ .
+ Note that this is a convenience package for users and is not a package for
+ Debian developers to have their package depend on.
+
+Package: xorg-server-source
+Architecture: all
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 9086
+Filename: ./xorg-server-source_1.20.4-1+rpt1_all.deb
+Size: 7517100
+MD5sum: 0f184f7c3bb8a1d1275bc27abe9828d6
+SHA1: e29ae07dc226f9a7e074d2e54a33925fcb5051f0
+SHA256: 545075c29d898450fada7ae152a49845b9ef93e67c02e6897ca23ebfec5fcefe
+SHA512: dea0f3f506e86c5a18214eb920d9d95fd4fbaf265aa8552ff02cce5d5f47a65f425af216c30d11cb8644e8d28e39c5768d6aa4a6fb09dd23e34b9bcd1bdd89e5
+Homepage: https://www.x.org/
+Description: Xorg X server - source files
+ This package provides original Debian (with Debian patches already
+ applied, and autotools files updated) sources for the X.Org ('Xorg')
+ X server shipped in a tarball.  This enables other projects re-using
+ X server codebase (e.g. VNC servers) to (re-)use officially
+ Debian-supported version of the X xserver for their builds.
+ .
+ Unless you are building a software product using X server sources,
+ you probably want xserver-xorg and/or xserver-xorg-core instead.
+
+Package: xorg
+Architecture: arm64
+Version: 1:7.7+16
+Priority: optional
+Section: x11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 51
+Provides: x-window-system, x-window-system-core
+Depends: xserver-xorg (>= 1:7.7+16), libgl1-mesa-glx | libgl1, libgl1-mesa-dri, libglu1-mesa, xfonts-base (>= 1:1.0.0-1), xfonts-100dpi (>= 1:1.0.0-1), xfonts-75dpi (>= 1:1.0.0-1), xfonts-scalable (>= 1:1.0.0-1), x11-apps, x11-session-utils, x11-utils, x11-xkb-utils, x11-xserver-utils, xauth, xinit, xfonts-utils, xkb-data, xorg-docs-core, xterm | x-terminal-emulator
+Suggests: xorg-docs, x11-xfs-utils
+Filename: ./xorg_7.7+16_arm64.deb
+Size: 38264
+MD5sum: dc759ded4d554803c0a9e741fba638d4
+SHA1: d4f2bda57c93ebdd651c72ac69767e0c85601882
+SHA256: 6bb08a0e63373a58f9ef3968c98180af473184a6e7455afa365b73ad966161e9
+SHA512: 20db08bcc035e7b5e38e4cbb422cd5d1c6466bfdf762abbe66a52cea1847c8e25f0eb0c23274311e1be147018127d8c45e1ab4e9ab1c03fbd3269706f07f4cd8
+Homepage: http://www.x.org/
+Description: X.Org X Window System
+ This metapackage provides the components for a standalone
+ workstation running the X Window System.  It provides the X libraries, an X
+ server, a set of fonts, and a group of basic X clients and utilities.
+ .
+ Higher level metapackages, such as those for desktop environments, can
+ depend on this package and simplify their dependencies.
+ .
+ It should be noted that a package providing x-window-manager should also
+ be installed to ensure a comfortable X experience.
+
+Package: xserver-common
+Architecture: all
+Version: 2:1.20.4-1+rpt1
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2299
+Depends: x11-common, xkb-data, x11-xkb-utils
+Recommends: xfonts-base, xauth
+Replaces: xserver-xorg-core (<< 2:1.5.2)
+Filename: ./xserver-common_1.20.4-1+rpt1_all.deb
+Size: 2234704
+MD5sum: a6d197532e64bb3cfcfe77ecfbe34629
+SHA1: 0e4c4220c43f33f04f38101b939f8aa443df8302
+SHA256: aad46ad8e0a9bdbddf1c50a7e6d430e35d5a6612dac0aaa8d6e71c4fd8506c22
+SHA512: bef2e0c5d339b326211295bd8f83340e50172307281c683fec4d4b990ac3173603340bb0beacaaf4a148ff3a2a344c9064bba2e33d5d9b7ac0a08e5357967ce1
+Homepage: https://www.x.org/
+Description: common files used by various X servers
+ This package provides files necessary for all X.Org based X servers.
+
+Package: xserver-xephyr-dbgsym
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 8356
+Depends: xserver-xephyr (= 2:1.20.4-1+rpt1)
+Filename: ./xserver-xephyr-dbgsym_1.20.4-1+rpt1_arm64.deb
+Size: 8047580
+MD5sum: 185f122c0f9b4c7050f240fa853f9667
+SHA1: c34385c8d0567df5de2f014a045cd1e6173bd505
+SHA256: 19376eaf91ca39bcf8d841f369bda41c199e05a543a65e13823bb433fd0f3250
+SHA512: 2fc2639fc18bea959076d19894bd86628e061c2c0ca42acf2420b7918d86efdeeb656115ee7a156599bc3f2db4f2d343b4c072e82f8810949352f6341b55cb34
+Description: debug symbols for xserver-xephyr
+Build-Ids: abb613c48643f45265a38dbaa8c85ba0f252d1ec
+
+Package: xserver-xephyr
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 4620
+Provides: xserver
+Depends: xserver-common (>= 2:1.20.4-1+rpt1), libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.7.0), libc6 (>= 2.17), libdbus-1-3 (>= 1.9.14), libdrm2 (>= 2.3.1), libepoxy0 (>= 1.0), libgcrypt20 (>= 1.8.0), libgl1, libpixman-1-0 (>= 0.30.0), libselinux1 (>= 2.0.82), libsystemd0, libudev1 (>= 183), libunwind8, libx11-6, libx11-xcb1, libxau6, libxcb-glx0, libxcb-icccm4 (>= 0.4.1), libxcb-image0 (>= 0.2.1), libxcb-keysyms1 (>= 0.4.0), libxcb-randr0 (>= 1.1), libxcb-render-util0, libxcb-render0, libxcb-shape0, libxcb-shm0 (>= 1.10), libxcb-util0 (>= 0.3.8), libxcb-xf86dri0, libxcb-xkb1, libxcb-xv0 (>= 1.2), libxcb1 (>= 1.8), libxdmcp6, libxfont2 (>= 1:2.0.1), libxshmfence1
+Recommends: libgl1-mesa-dri (>= 7.1~rc1)
+Filename: ./xserver-xephyr_1.20.4-1+rpt1_arm64.deb
+Size: 3056376
+MD5sum: ed35f485840b00a3609f78226c289307
+SHA1: 581bedb36e4bb1b65de48c76bd9c929beb8dbfda
+SHA256: bc256d6406c1ef135da22ace3b71a214f4fe5f6783886acd0c6e0ce4f3beaa09
+SHA512: 20a713c9c54951483f13fbff4214de4de77c0ad29ba41b091b482278730b3dd9f5ede3d27261617d63f662ca4af17f7969c31a9d10e6cc8e95015c9bb5202194
+Homepage: https://www.x.org/
+Description: nested X server
+ Xephyr is an X server that can be run inside another X server,
+ much like Xnest. It is based on the kdrive X server, and as a
+ result it supports newer extensions than Xnest, including render and
+ composite.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xserver-xorg-core-dbgsym
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 11537
+Depends: xserver-xorg-core (= 2:1.20.4-1+rpt1)
+Filename: ./xserver-xorg-core-dbgsym_1.20.4-1+rpt1_arm64.deb
+Size: 11004964
+MD5sum: d577d179a625552e720a247e1ac85262
+SHA1: f9c67cb3177fd6358d1b01278a191b974a6e0b59
+SHA256: 3f7a79835f46d91ea1fe369c21439da9e4794d2c0ffbe9fdb281080027ca6938
+SHA512: c178d9d7390b9c2bc49f54ccdf82f5dbdf488352a47d98ecc55471057cf1b35c4938afa8bc8bc83faf8b4d96c717539176a2b51d337e7a46ea65d35dfca7a28d
+Description: debug symbols for xserver-xorg-core
+Build-Ids: 0d952e95d1f3cba70461ce74d33a2c020f84d92e 1f7965dc92ff85a2d6bcff0e7859e5ada953b7b2 2176bbc1713ff47e51a9d647c8640507c2edc57b 43267184089d303708d822e5c4ab6b4ab8d70f45 561452623d2f9b1e28682b3d00efdef831863207 759b2009351679d0836274b8a707c98cf65db7cf 76cc28f3d9fb0b7f717d81de6c42c1558b962c77 7739114292a5bb863904ee16f857901178c0d440 8a131a5b9e7ae47f13a7eac0f08ebba2479c3347 8fb86db27da9e2e2ea5d0121aa4dee9b550b97db 9431a0628dde43bb8f2a614c810a1321a9d3eb36 9aa3aa445ecc64b37a8f2dc211072e6e76860a63 c12818d5afe4df7e83eca1955ec80bb180e0cc8c ee47d4af647eddf528fb5a9beb716ddbbcdf7ada f2935c13f85ea26f2b5a29f9c30003e9a0fcec8a
+
+Package: xserver-xorg-core-udeb
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: debian-installer
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2477
+Provides: xorg-input-abi-24, xorg-video-abi-24
+Depends: xkb-data-udeb, x11-xkb-utils-udeb, udev-udeb (>= 149), libbsd0-udeb, libc6-udeb (>= 2.28), libdrm2-udeb (>= 2.4.89), libpciaccess0-udeb (>= 0.12.902), libpixman-1-0-udeb (>= 0.25.2), libudev1-udeb, libxau6-udeb, libxfont2-udeb (>= 1:2.0.1), libxshmfence1-udeb
+Filename: ./xserver-xorg-core-udeb_1.20.4-1+rpt1_arm64.udeb
+Size: 864860
+MD5sum: f90ead73b5aeb3f9654ccf615faff1eb
+SHA1: acdb4fb925141723da0b70fa10199514d4cf7313
+SHA256: 9f0cd2c6d975235338a89cd0e3bb1be4d1cd2746509206bb51f516ec8eca2b7e
+SHA512: c224a269e6e9a45261770f063c8f7b13e06519607a0134ad909a8711c5545d362cc5fc013e22bfac72456948d3dd05187c6bbc6590b8c282c592da46c11ccd0b
+Description: Xorg X server - core server
+ This is a udeb, or a microdeb, for the debian-installer.
+
+Package: xserver-xorg-core
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 5878
+Provides: xorg-input-abi-24, xorg-video-abi-24, xserver-xorg-video-modesetting
+Depends: xserver-common (>= 2:1.20.4-1+rpt1), keyboard-configuration, udev (>= 149), libegl1-mesa | libegl1, libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.7.0), libc6 (>= 2.17), libdbus-1-3 (>= 1.9.14), libdrm2 (>= 2.4.66), libepoxy0 (>= 1.4.3), libgbm1 (>= 17.1.0~rc2), libgcrypt20 (>= 1.8.0), libgl1, libpciaccess0 (>= 0.12.902), libpixman-1-0 (>= 0.30.0), libselinux1 (>= 2.0.82), libsystemd0, libudev1 (>= 183), libunwind8, libxau6, libxdmcp6, libxfont2 (>= 1:2.0.1), libxshmfence1
+Recommends: libgl1-mesa-dri (>= 7.10.2-4), libpam-systemd
+Suggests: xfonts-100dpi | xfonts-75dpi, xfonts-scalable
+Conflicts: xserver-xorg-input-evtouch, xserver-xorg-video-modesetting
+Breaks: libgl1-mesa-dri (<< 18.0.5), systemd (<< 226-4~), xserver-xorg (<< 1:7.7+10~)
+Replaces: xserver-xorg (<< 1:7.7+10~), xserver-xorg-video-modesetting
+Filename: ./xserver-xorg-core_1.20.4-1+rpt1_arm64.deb
+Size: 3440644
+MD5sum: 60442a8a49278a69c484ebdb0f3b4194
+SHA1: 9f2c89f21ef5276999f5be5d90586c1367eeb882
+SHA256: 0f8d6b494c874316ba1bfd571a0dfa4e4af5bfacadb0add7cba39105468294f6
+SHA512: 12d58806ff03735a0df2f560da8a2c23c9c761aa2ba3336ff61bcfafeec32d6c6b5062abcfc59b62362a206ecf529c56fe5cbcf1b48a097bca413408ac330fec
+Homepage: https://www.x.org/
+Description: Xorg X server - core server
+ The Xorg X server is an X server for several architectures and operating
+ systems, which is derived from the XFree86 4.x series of X servers.
+ .
+ The Xorg server supports most modern graphics hardware from most vendors,
+ and supersedes all XFree86 X servers.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xserver-xorg-dev
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 3499
+Depends: libpixman-1-dev (>= 0.27.2), x11proto-dev (>= 2018.4), libxfont-dev, libxkbfile-dev, libpciaccess-dev, mesa-common-dev
+Filename: ./xserver-xorg-dev_1.20.4-1+rpt1_arm64.deb
+Size: 2408496
+MD5sum: b2f3307317267acd1f9251fa62d3c199
+SHA1: f05a343f72d4cdee8894f669197d1cd54aacd4dd
+SHA256: 13a14329ca418065b7d1b390d10d7986ebca139c1a013687e11de5cc170a0e21
+SHA512: c1071a3784175a5551f716567e8e80283175a507fa1d337e7742203195fa2f07315174fec4f94cfe82fec2a87cd3f82d2d122c5cf914931e378d122ed34df739
+Homepage: https://www.x.org/
+Description: Xorg X server - development files
+ This package provides development files for the X.Org ('Xorg') X server.
+ This is not quite the same as the DDK (Driver Development Kit) from the
+ XFree86 4.x and X.Org 6.7, 6.8 and 6.9 series of servers; it provides
+ headers and a pkg-config file for drivers using autotools to build
+ against.
+ .
+ Unless you are developing or building a driver, you probably want
+ xserver-xorg and/or xserver-xorg-core instead.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xserver-xorg-input-all
+Architecture: arm64
+Version: 1:7.7+16
+Priority: optional
+Section: x11
+Source: xorg
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 45
+Depends: xserver-xorg-input-libinput
+Recommends: xserver-xorg-input-wacom
+Filename: ./xserver-xorg-input-all_7.7+16_arm64.deb
+Size: 37768
+MD5sum: fbc26319bd0fc26640422872b82623ff
+SHA1: 71c37af7cc7f4faa3c95949ad0d83c12aaac913c
+SHA256: e4a18a326de90b6ed36608d415982414bd13fca7b42db71b3224c4aea96e5153
+SHA512: dfdf64349a65400934be78f222931f762dfdd2b7f371e5ffe7e5386b45b00d8927d0b2821cb534b449d7e5e60e2450492f9f4e08be606d7f78f8d07cfa280d84
+Homepage: http://www.x.org/
+Description: X.Org X server -- input driver metapackage
+ This package depends on the full suite of input drivers for the X.Org X server
+ (Xorg).  It does not provide any drivers itself, and may be removed if you wish
+ to only have certain drivers installed.
+
+Package: xserver-xorg-legacy-dbgsym
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 25
+Depends: xserver-xorg-legacy (= 2:1.20.4-1+rpt1)
+Filename: ./xserver-xorg-legacy-dbgsym_1.20.4-1+rpt1_arm64.deb
+Size: 9976
+MD5sum: dd59e7fc795207b8477d488960e6fbe5
+SHA1: 6de7455882f8fe0383d14512447a3668c332c549
+SHA256: db59a23049d097050a1f2d08e5751be9cf78f563ed65932d11d45d4420f6514e
+SHA512: 90172636e8ea1e8094abb0996bbff7489b04b0d6ff80bf10a3e221c2448cb1cf2c44a659953530c265fee2d75c6fa33f8e91bf21021b005aa4914310451e1ad5
+Description: debug symbols for xserver-xorg-legacy
+Build-Ids: faf0582607e1ebb3a29b0bdc973e19849c35f67a
+
+Package: xserver-xorg-legacy
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2326
+Depends: xserver-common (>= 2:1.20.4-1+rpt1), libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.0), libc6 (>= 2.17), debconf (>= 0.5) | debconf-2.0
+Breaks: x11-common (<< 1:7.7+10~), xserver-xorg-core (<< 2:1.17.2-3~)
+Replaces: x11-common (<< 1:7.7+10~), xserver-xorg-core (<< 2:1.17.2-3~)
+Filename: ./xserver-xorg-legacy_1.20.4-1+rpt1_arm64.deb
+Size: 2240136
+MD5sum: 6e452832bba3f1d66c6fb6e8c64d1d10
+SHA1: bc6b2922654a14ec47a2d0858c4e33fd1e0f6494
+SHA256: 3068d01d738e2657d9c1b89769451cf1f99e3d92fad544f0fd5e490f218ba065
+SHA512: 5bad6fa0d0381eac8455d6d4570f713aeb4706de2feff24c7a1f0c88ac040dcf796b04b649cca296283f87c166fb3e364efde7896f9102118ac71c319f789e00
+Homepage: https://www.x.org/
+Description: setuid root Xorg server wrapper
+ This package provides a wrapper for the Xorg X server, which is
+ necessary for legacy drivers and non-Linux kernels.
+
+Package: xserver-xorg-video-all
+Architecture: arm64
+Version: 1:7.7+16
+Priority: optional
+Section: x11
+Source: xorg
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 45
+Depends: xserver-xorg-video-amdgpu, xserver-xorg-video-ati, xserver-xorg-video-fbdev, xserver-xorg-video-freedreno, xserver-xorg-video-nouveau, xserver-xorg-video-vesa
+Conflicts: xserver-xorg-driver-all
+Replaces: xserver-xorg-driver-all
+Filename: ./xserver-xorg-video-all_7.7+16_arm64.deb
+Size: 37808
+MD5sum: 5d40e2cd47cdfac5f04e109bb8ee2088
+SHA1: dbb57dd9c44e5b2807fc7cbeddc635daadd5f94d
+SHA256: 2613077c7c5aae1c2981ad4afdb5314ff2c0a2487b9237c652bd77fc21b32186
+SHA512: 811b66890eafaeb9aa0d366ad491ee2f0b34ecf6d49a343ec38fbd37e8cd03dc0d3e9a5acdb2a1c531c6ca92b4c76a59f6e083755a71caa8cfaeafdf7551281b
+Homepage: http://www.x.org/
+Description: X.Org X server -- output driver metapackage
+ This package depends on the full suite of output drivers for the X.Org X server
+ (Xorg).  It does not provide any drivers itself, and may be removed if you wish
+ to only have certain drivers installed.
+
+Package: xserver-xorg-video-fbdev-dbgsym
+Architecture: arm64
+Version: 1:0.4.4-1+rpi2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xserver-xorg-video-fbdev
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 56
+Depends: xserver-xorg-video-fbdev (= 1:0.4.4-1+rpi2)
+Filename: ./xserver-xorg-video-fbdev-dbgsym_0.4.4-1+rpi2_arm64.deb
+Size: 40288
+MD5sum: 78c38f7091b88c1171bea0d622807481
+SHA1: d976b76585396c3532cf3b8eba4da920494f67fc
+SHA256: 60c94b69118e62bab219c92d4e46093ad88436d78ec0e21af358e43687499a70
+SHA512: 7f95096085624ca6d1e37b0978ac391af795d024f67ef16a23ff29d59b4c2db46ac03f871dc4797ab8a037dee16bf4c710bb4c6a6b57ce40f42714b6c8e4c36a
+Description: debug symbols for xserver-xorg-video-fbdev
+Build-Ids: 7fa11eab02e3a86e899e1824b6bcc9da17dc1756
+
+Package: xserver-xorg-video-fbdev-udeb
+Architecture: arm64
+Version: 1:0.4.4-1+rpi2
+Priority: optional
+Section: debian-installer
+Source: xserver-xorg-video-fbdev
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 30
+Provides: xorg-driver-video
+Depends: libc6-udeb (>= 2.28), xorg-video-abi-24, xserver-xorg-core-udeb (>= 2:1.18.99.901)
+Filename: ./xserver-xorg-video-fbdev-udeb_0.4.4-1+rpi2_arm64.udeb
+Size: 7540
+MD5sum: 6b03bbd17113bf9a36b526a247d08e45
+SHA1: 59de171cf1d5c5fd3298b92844c29c8220383976
+SHA256: d914ce6cadb76b4b405981ba42e64473d18c0d53fff9f14baba6a7ec1cfc1678
+SHA512: e3fdeb73bedf221acd1476791c9260482de12ae8d9f6e34beee983740048d88343f0eb6f77d38bdc21af0bcc2aafa21104b15ca7501c013c27030c79c40ba2cb
+Description: X.Org X server -- fbdev display driver
+ This is a udeb, or a microdeb, for the debian-installer.
+
+Package: xserver-xorg-video-fbdev
+Architecture: arm64
+Version: 1:0.4.4-1+rpi2
+Priority: optional
+Section: x11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 54
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.17), xorg-video-abi-24, xserver-xorg-core (>= 2:1.18.99.901)
+Filename: ./xserver-xorg-video-fbdev_0.4.4-1+rpi2_arm64.deb
+Size: 22588
+MD5sum: 817972adbf7d23272a44c9046f5eae6c
+SHA1: de0470e0a1ac65ad28227e8d1ed9b3d26af3808b
+SHA256: 5dd51bc6c984f3a3263acc01fd732ece9b21545bbfddd21895985e7bbd879092
+SHA512: 0ac4dafe60d74cee4ac45f8ecef3e75e4d404e5086071b5969c45ea1f4bb310264c6ec7c1bd24ba3ee8eba13ec62553ca0f454f2cc9456fb9a39f4740dd167d5
+Description: X.Org X server -- fbdev display driver
+ This package provides the driver for the Linux framebuffer device (aka
+ 'fbdev').
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org xf86-video-fbdev driver module.
+
+Package: xserver-xorg-video-fbturbo-dbgsym
+Architecture: arm64
+Version: 1.20190107~114053
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xserver-xorg-video-fbturbo
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 161
+Depends: xserver-xorg-video-fbturbo (= 1.20190107~114053)
+Filename: ./xserver-xorg-video-fbturbo-dbgsym_1.20190107~114053_arm64.deb
+Size: 142412
+MD5sum: 0132cf79ff551c4fa541c3909fd63307
+SHA1: 4f59c23004df6bfee246e0abe0755ba6f2e40ff0
+SHA256: 2ac8341454232f4ad3cc4d2a3b5fcd23f52d87c32d02e9796b9d1573ccab09a1
+SHA512: 46160500fced942b8b51db6da424b5996ec1ab6c9c2a5ec340a1a6a617af4b0178259778787cf59686f5ae1e74b767bc65e47c02d708b62fe44bbc21e4c48479
+Description: debug symbols for xserver-xorg-video-fbturbo
+Build-Ids: 8ae93f6218ae407215545c5c5f3f189923e63d32
+
+Package: xserver-xorg-video-fbturbo
+Architecture: arm64
+Version: 1.20190107~114053
+Priority: optional
+Section: x11
+Maintainer: Serge Schneider <serge@raspberrypi.org>
+Installed-Size: 73
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.17), xorg-video-abi-24, xserver-xorg-core (>= 2:1.18.99.901)
+Filename: ./xserver-xorg-video-fbturbo_1.20190107~114053_arm64.deb
+Size: 24012
+MD5sum: 56b5a189d2cbd849f9184652273840a4
+SHA1: 580905449d8174bd1b3f7f6d5fde5ec49983cc4d
+SHA256: 0c87079ae0a5953bc37e6b25e9e26aa5f5060b5535983eaea14cf1ef9e64b965
+SHA512: d6750a80fe13d919907c43997766b88b7d77f315a12251b2793f44655fd9008301c1e4d43816eb0a6e813d7bde91bf57db5d91185d8079c953cae4a9650b09e7
+Description: X.Org X server -- fbturbo display driver
+ This package provides the fbturbo driver which provides accelerated functions
+ on the Raspberry Pi and similar. More at <https://github.com/ssvb/xf86-video-fbturbo>
+
+Package: xserver-xorg
+Architecture: arm64
+Version: 1:7.7+16
+Priority: optional
+Section: x11
+Source: xorg
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 237
+Provides: xserver
+Depends: xserver-xorg-core (>= 2:1.17.2-2), xserver-xorg-video-all | xorg-driver-video, xserver-xorg-input-all | xorg-driver-input, xkb-data (>= 1.4), x11-xkb-utils
+Recommends: libgl1-mesa-dri
+Filename: ./xserver-xorg_7.7+16_arm64.deb
+Size: 93416
+MD5sum: b5daf19cc89ea42edcc3043163e14903
+SHA1: 7509eadd207f4ea26e2ae9d400167d00dc659724
+SHA256: 76e2820f86b9d391ebf1299009800cd5f59c21de416406bf8e6c935444d51ab4
+SHA512: dd5664da950fa35f29ef61a8b96d1e82e40fb72ec2b6c93ac6d3d8a2f0302ef5ec7135e2c84981eda6bcad2e1de145b1f240e656c331570f8024c846bdbc1890
+Homepage: http://www.x.org/
+Description: X.Org X server
+ This package depends on the full suite of the server and drivers for the
+ X.Org X server.  It does not provide the actual server itself.
+
+Package: xutils
+Architecture: all
+Version: 1:7.7+16
+Priority: optional
+Section: x11
+Source: xorg
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 45
+Depends: x11-utils, x11-xserver-utils, x11-session-utils, xfonts-utils
+Suggests: x11-xfs-utils
+Filename: ./xutils_7.7+16_all.deb
+Size: 37828
+MD5sum: b42aee94c852802f909baaeb7b3f1479
+SHA1: 2788df8f4492a203616c33c20570e7fa318b09d0
+SHA256: 6d6547b5d6d1c6659bcc9288ba16f6e76f2a66e3df5760757b9c1b8ef20ad7b7
+SHA512: ef2be605485a0947c51ba0ba29aa1b8df17892dadb87537423a967006a205f1a45d46139001ee64683e3ff0d5d59a9a5b489adaadcf5349723210b59986a4aa3
+Homepage: http://www.x.org/
+Description: X Window System utility programs metapackage
+ xutils provides a set of utility programs shipped with the X Window System.
+ Many of these programs are useful even on a system that does not have any X
+ clients or X servers installed.
+ .
+ This package is provided for transition from earlier Debian releases, the
+ programs formerly in xutils and xbase-clients having been split out in smaller
+ packages.
+
+Package: xvfb-dbgsym
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 5595
+Depends: xvfb (= 2:1.20.4-1+rpt1)
+Filename: ./xvfb-dbgsym_1.20.4-1+rpt1_arm64.deb
+Size: 5301856
+MD5sum: 198bf35aadb8d266bf37f54530cc8986
+SHA1: 2331e0e934f112c403d605d3b5df64b1698d50f9
+SHA256: 5bde6395ee29f864cbbf7cbf1c57c4a2c856691b4e480b1a3ab15852476ebdac
+SHA512: 9fce9adfc25a19facb725f23bc8af22f732497b6f4e6eb842781ea9da70456cc4d2a0de410429340b5c1f0d190d6ad067fd670a8a933f0754a8af5d9f35075ae
+Description: debug symbols for xvfb
+Build-Ids: 7c3119ca563ac986bab378819621f1d78316d983
+
+Package: xvfb
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 4249
+Provides: xserver
+Depends: xserver-common (>= 2:1.20.4-1+rpt1), libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.7.0), libc6 (>= 2.17), libgcrypt20 (>= 1.8.0), libgl1, libpixman-1-0 (>= 0.30.0), libselinux1 (>= 2.0.82), libsystemd0, libunwind8, libxau6, libxdmcp6, libxfont2 (>= 1:2.0.1), libxshmfence1
+Recommends: xauth
+Filename: ./xvfb_1.20.4-1+rpt1_arm64.deb
+Size: 2933604
+MD5sum: a9f0a811d2f38c1c27c23370a5b7af89
+SHA1: ba2d12d0f4a3365ae720f73a4f8e098544df2500
+SHA256: de779d746d7345fe5376e3afaf7d25d0042853eb0645ccd6af1ad4f83cf7a35b
+SHA512: 43633124faebcde4efcf6e4841b152a047a6c3a9cf644cf59814123f0592180a41cf4061639336a06ebe60974b1d35bef61ef66d1e6805933419cea174fce4be
+Homepage: https://www.x.org/
+Description: Virtual Framebuffer 'fake' X server
+ Xvfb provides an X server that can run on machines with no display hardware
+ and no physical input devices. It emulates a dumb framebuffer using virtual
+ memory. The primary use of this server was intended to be server testing,
+ but other novel uses for it have been found, including testing clients
+ against unusual depths and screen configurations, doing batch processing with
+ Xvfb as a background rendering engine, load testing, as an aid to porting the
+ X server to a new platform, and providing an unobtrusive way to run
+ applications that don't really need an X server but insist on having one
+ anyway.
+ .
+ This package also contains a convenience script called xvfb-run which
+ simplifies the automated execution of X clients in a virtual server
+ environment. This convenience script requires the use of the xauth
+ program.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xwayland-dbgsym
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 7968
+Depends: xwayland (= 2:1.20.4-1+rpt1)
+Filename: ./xwayland-dbgsym_1.20.4-1+rpt1_arm64.deb
+Size: 7672432
+MD5sum: 983f5e66b3d7fcc599080fb9b8436150
+SHA1: 4e09dccf9aa596ec86405732d90af07f8e3072f2
+SHA256: 992e08d132e9f225df259771b73e1cfc8ace892df71089abfd5c2f010b01ef50
+SHA512: cc500e804d19bd75adcd0857b8e751d785f9ee5ae2e3f5f276434105e20b77c4109e4023dd02defdd912c3b846fbe08f99530dc1dd439516dbd595fd0b6b8c93
+Description: debug symbols for xwayland
+Build-Ids: dc6ba52a184d6e0730fd2b9c5e782d4b3a3b38c4
+
+Package: xwayland
+Architecture: arm64
+Version: 2:1.20.4-1+rpt1
+Priority: optional
+Section: x11
+Source: xorg-server
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 4484
+Depends: xserver-common (>= 2:1.20.4-1+rpt1), libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.7.0), libc6 (>= 2.17), libdrm2 (>= 2.3.1), libegl1, libepoxy0 (>= 1.0), libgbm1 (>= 17.1.0~rc2), libgcrypt20 (>= 1.8.0), libgl1, libpixman-1-0 (>= 0.30.0), libselinux1 (>= 2.0.82), libsystemd0, libunwind8, libwayland-client0 (>= 1.9.91), libxau6, libxdmcp6, libxfont2 (>= 1:2.0.1), libxshmfence1
+Filename: ./xwayland_1.20.4-1+rpt1_arm64.deb
+Size: 3010256
+MD5sum: 53f2e650331163b1db99c9b94b42cfa7
+SHA1: fc69413b76a2bf8b92af11a9ba215709228885ea
+SHA256: fb6aa384a03f6fb510831d06f174cf0eb86afdb25f2cbb61436d997c97a96575
+SHA512: f8aa9de2e008ebfd5a834318896a390c6cf90e5fa087438b7074b80b150af9513b65d587904a9b31eedad35130867d081e4991d20ceed34f5fa3490a3217952c
+Homepage: https://www.x.org/
+Description: Xwayland X server
+ This package provides an X server running on top of wayland, using wayland
+ input devices for input and forwarding either the root window or individual
+ top-level windows as wayland surfaces.
+

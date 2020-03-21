@@ -1,0 +1,13 @@
+#!/bin/sh
+apt-get install gnupg wget -y
+wget http://dl.chainsx.cn/deb/pub.key
+gpg --import pub.key
+gpg --export --armor | apt-key add -
+rm pub.key
+touch /etc/apt/sources.list.d/chainsx.list
+echo "deb http://dl.chainsx.cn/deb ./" >> /etc/apt/sources.list.d/chainsx.list
+echo "Done."
+apt-get update
+apt-get install xinit --no-install-recommends
+apt-get install xserver-xorg --no-install-recommends
+apt-get install raspberrypi-ui-mods
